@@ -8,6 +8,304 @@
 
 /* Begin PBXBuildFile section */
 		E9474DA11CC691A100EB71BA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9474DA01CC691A100EB71BA /* main.cpp */; };
+		E9474DF61CC6925700EB71BA /* libITKBiasCorrection-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DA71CC6925700EB71BA /* libITKBiasCorrection-4.7.a */; };
+		E9474DF71CC6925700EB71BA /* libITKBioCell-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DA81CC6925700EB71BA /* libITKBioCell-4.7.a */; };
+		E9474DF81CC6925700EB71BA /* libITKCommon-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DA91CC6925700EB71BA /* libITKCommon-4.7.a */; };
+		E9474DF91CC6925700EB71BA /* libITKDeprecated-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAA1CC6925700EB71BA /* libITKDeprecated-4.7.a */; };
+		E9474DFA1CC6925700EB71BA /* libITKDICOMParser-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAB1CC6925700EB71BA /* libITKDICOMParser-4.7.a */; };
+		E9474DFB1CC6925700EB71BA /* libitkdouble-conversion-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAC1CC6925700EB71BA /* libitkdouble-conversion-4.7.a */; };
+		E9474DFC1CC6925700EB71BA /* libITKEXPAT-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAD1CC6925700EB71BA /* libITKEXPAT-4.7.a */; };
+		E9474DFD1CC6925700EB71BA /* libITKFEM-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAE1CC6925700EB71BA /* libITKFEM-4.7.a */; };
+		E9474DFE1CC6925700EB71BA /* libitkgdcmCommon-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DAF1CC6925700EB71BA /* libitkgdcmCommon-4.7.a */; };
+		E9474DFF1CC6925700EB71BA /* libitkgdcmDICT-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB01CC6925700EB71BA /* libitkgdcmDICT-4.7.a */; };
+		E9474E001CC6925700EB71BA /* libitkgdcmDSED-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB11CC6925700EB71BA /* libitkgdcmDSED-4.7.a */; };
+		E9474E011CC6925700EB71BA /* libitkgdcmIOD-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB21CC6925700EB71BA /* libitkgdcmIOD-4.7.a */; };
+		E9474E021CC6925700EB71BA /* libitkgdcmjpeg8-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB31CC6925700EB71BA /* libitkgdcmjpeg8-4.7.a */; };
+		E9474E031CC6925700EB71BA /* libitkgdcmjpeg12-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB41CC6925700EB71BA /* libitkgdcmjpeg12-4.7.a */; };
+		E9474E041CC6925700EB71BA /* libitkgdcmjpeg16-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB51CC6925700EB71BA /* libitkgdcmjpeg16-4.7.a */; };
+		E9474E051CC6925700EB71BA /* libitkgdcmMSFF-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB61CC6925700EB71BA /* libitkgdcmMSFF-4.7.a */; };
+		E9474E061CC6925700EB71BA /* libitkgdcmuuid-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB71CC6925700EB71BA /* libitkgdcmuuid-4.7.a */; };
+		E9474E071CC6925700EB71BA /* libITKgiftiio-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB81CC6925700EB71BA /* libITKgiftiio-4.7.a */; };
+		E9474E081CC6925700EB71BA /* libitkhdf5_cpp-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DB91CC6925700EB71BA /* libitkhdf5_cpp-4.7.a */; };
+		E9474E091CC6925700EB71BA /* libitkhdf5-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBA1CC6925700EB71BA /* libitkhdf5-4.7.a */; };
+		E9474E0A1CC6925700EB71BA /* libITKIOBioRad-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBB1CC6925700EB71BA /* libITKIOBioRad-4.7.a */; };
+		E9474E0B1CC6925700EB71BA /* libITKIOBMP-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBC1CC6925700EB71BA /* libITKIOBMP-4.7.a */; };
+		E9474E0C1CC6925700EB71BA /* libITKIOCSV-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBD1CC6925700EB71BA /* libITKIOCSV-4.7.a */; };
+		E9474E0D1CC6925700EB71BA /* libITKIOGDCM-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBE1CC6925700EB71BA /* libITKIOGDCM-4.7.a */; };
+		E9474E0E1CC6925700EB71BA /* libITKIOGE-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DBF1CC6925700EB71BA /* libITKIOGE-4.7.a */; };
+		E9474E0F1CC6925700EB71BA /* libITKIOGIPL-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC01CC6925700EB71BA /* libITKIOGIPL-4.7.a */; };
+		E9474E101CC6925700EB71BA /* libITKIOHDF5-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC11CC6925700EB71BA /* libITKIOHDF5-4.7.a */; };
+		E9474E111CC6925700EB71BA /* libITKIOImageBase-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC21CC6925700EB71BA /* libITKIOImageBase-4.7.a */; };
+		E9474E121CC6925700EB71BA /* libITKIOIPL-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC31CC6925700EB71BA /* libITKIOIPL-4.7.a */; };
+		E9474E131CC6925700EB71BA /* libITKIOJPEG-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC41CC6925700EB71BA /* libITKIOJPEG-4.7.a */; };
+		E9474E141CC6925700EB71BA /* libITKIOLSM-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC51CC6925700EB71BA /* libITKIOLSM-4.7.a */; };
+		E9474E151CC6925700EB71BA /* libITKIOMesh-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC61CC6925700EB71BA /* libITKIOMesh-4.7.a */; };
+		E9474E161CC6925700EB71BA /* libITKIOMeta-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC71CC6925700EB71BA /* libITKIOMeta-4.7.a */; };
+		E9474E171CC6925700EB71BA /* libITKIOMRC-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC81CC6925700EB71BA /* libITKIOMRC-4.7.a */; };
+		E9474E181CC6925700EB71BA /* libITKIONIFTI-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DC91CC6925700EB71BA /* libITKIONIFTI-4.7.a */; };
+		E9474E191CC6925700EB71BA /* libITKIONRRD-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCA1CC6925700EB71BA /* libITKIONRRD-4.7.a */; };
+		E9474E1A1CC6925700EB71BA /* libITKIOPNG-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCB1CC6925700EB71BA /* libITKIOPNG-4.7.a */; };
+		E9474E1B1CC6925700EB71BA /* libITKIOSiemens-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCC1CC6925700EB71BA /* libITKIOSiemens-4.7.a */; };
+		E9474E1C1CC6925700EB71BA /* libITKIOSpatialObjects-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCD1CC6925700EB71BA /* libITKIOSpatialObjects-4.7.a */; };
+		E9474E1D1CC6925700EB71BA /* libITKIOStimulate-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCE1CC6925700EB71BA /* libITKIOStimulate-4.7.a */; };
+		E9474E1E1CC6925700EB71BA /* libITKIOTIFF-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DCF1CC6925700EB71BA /* libITKIOTIFF-4.7.a */; };
+		E9474E1F1CC6925700EB71BA /* libITKIOTransformBase-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD01CC6925700EB71BA /* libITKIOTransformBase-4.7.a */; };
+		E9474E201CC6925700EB71BA /* libITKIOTransformHDF5-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD11CC6925700EB71BA /* libITKIOTransformHDF5-4.7.a */; };
+		E9474E211CC6925700EB71BA /* libITKIOTransformInsightLegacy-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD21CC6925700EB71BA /* libITKIOTransformInsightLegacy-4.7.a */; };
+		E9474E221CC6925700EB71BA /* libITKIOTransformMatlab-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD31CC6925700EB71BA /* libITKIOTransformMatlab-4.7.a */; };
+		E9474E231CC6925700EB71BA /* libITKIOVTK-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD41CC6925700EB71BA /* libITKIOVTK-4.7.a */; };
+		E9474E241CC6925700EB71BA /* libITKIOXML-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD51CC6925700EB71BA /* libITKIOXML-4.7.a */; };
+		E9474E251CC6925700EB71BA /* libitkjpeg-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD61CC6925700EB71BA /* libitkjpeg-4.7.a */; };
+		E9474E261CC6925700EB71BA /* libITKKLMRegionGrowing-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD71CC6925700EB71BA /* libITKKLMRegionGrowing-4.7.a */; };
+		E9474E271CC6925700EB71BA /* libITKLabelMap-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD81CC6925700EB71BA /* libITKLabelMap-4.7.a */; };
+		E9474E281CC6925700EB71BA /* libITKMesh-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DD91CC6925700EB71BA /* libITKMesh-4.7.a */; };
+		E9474E291CC6925700EB71BA /* libITKMetaIO-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDA1CC6925700EB71BA /* libITKMetaIO-4.7.a */; };
+		E9474E2A1CC6925700EB71BA /* libitkNetlibSlatec-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDB1CC6925700EB71BA /* libitkNetlibSlatec-4.7.a */; };
+		E9474E2B1CC6925700EB71BA /* libITKniftiio-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDC1CC6925700EB71BA /* libITKniftiio-4.7.a */; };
+		E9474E2C1CC6925700EB71BA /* libITKNrrdIO-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDD1CC6925700EB71BA /* libITKNrrdIO-4.7.a */; };
+		E9474E2D1CC6925700EB71BA /* libitkopenjpeg-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDE1CC6925700EB71BA /* libitkopenjpeg-4.7.a */; };
+		E9474E2E1CC6925700EB71BA /* libITKOptimizers-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DDF1CC6925700EB71BA /* libITKOptimizers-4.7.a */; };
+		E9474E2F1CC6925700EB71BA /* libITKOptimizersv4-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE01CC6925700EB71BA /* libITKOptimizersv4-4.7.a */; };
+		E9474E301CC6925700EB71BA /* libITKPath-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE11CC6925700EB71BA /* libITKPath-4.7.a */; };
+		E9474E311CC6925700EB71BA /* libitkpng-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE21CC6925700EB71BA /* libitkpng-4.7.a */; };
+		E9474E321CC6925700EB71BA /* libITKPolynomials-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE31CC6925700EB71BA /* libITKPolynomials-4.7.a */; };
+		E9474E331CC6925700EB71BA /* libITKQuadEdgeMesh-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE41CC6925700EB71BA /* libITKQuadEdgeMesh-4.7.a */; };
+		E9474E341CC6925700EB71BA /* libITKSpatialObjects-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE51CC6925700EB71BA /* libITKSpatialObjects-4.7.a */; };
+		E9474E351CC6925700EB71BA /* libITKStatistics-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE61CC6925700EB71BA /* libITKStatistics-4.7.a */; };
+		E9474E361CC6925700EB71BA /* libitksys-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE71CC6925700EB71BA /* libitksys-4.7.a */; };
+		E9474E371CC6925700EB71BA /* libitktiff-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE81CC6925700EB71BA /* libitktiff-4.7.a */; };
+		E9474E381CC6925700EB71BA /* libitkv3p_lsqr-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DE91CC6925700EB71BA /* libitkv3p_lsqr-4.7.a */; };
+		E9474E391CC6925700EB71BA /* libitkv3p_netlib-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DEA1CC6925700EB71BA /* libitkv3p_netlib-4.7.a */; };
+		E9474E3A1CC6925700EB71BA /* libitkvcl-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DEB1CC6925700EB71BA /* libitkvcl-4.7.a */; };
+		E9474E3B1CC6925700EB71BA /* libITKVideoCore-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DEC1CC6925700EB71BA /* libITKVideoCore-4.7.a */; };
+		E9474E3C1CC6925700EB71BA /* libITKVideoIO-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DED1CC6925700EB71BA /* libITKVideoIO-4.7.a */; };
+		E9474E3D1CC6925700EB71BA /* libitkvnl_algo-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DEE1CC6925700EB71BA /* libitkvnl_algo-4.7.a */; };
+		E9474E3E1CC6925700EB71BA /* libitkvnl-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DEF1CC6925700EB71BA /* libitkvnl-4.7.a */; };
+		E9474E3F1CC6925700EB71BA /* libITKVNLInstantiation-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF01CC6925700EB71BA /* libITKVNLInstantiation-4.7.a */; };
+		E9474E401CC6925700EB71BA /* libITKVTK-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF11CC6925700EB71BA /* libITKVTK-4.7.a */; };
+		E9474E411CC6925700EB71BA /* libITKVtkGlue-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF21CC6925700EB71BA /* libITKVtkGlue-4.7.a */; };
+		E9474E421CC6925700EB71BA /* libITKWatersheds-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF31CC6925700EB71BA /* libITKWatersheds-4.7.a */; };
+		E9474E431CC6925700EB71BA /* libitkzlib-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF41CC6925700EB71BA /* libitkzlib-4.7.a */; };
+		E9474E441CC6925700EB71BA /* libITKznz-4.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474DF51CC6925700EB71BA /* libITKznz-4.7.a */; };
+		E9474F1F1CC6926F00EB71BA /* libvtkalglib-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E451CC6926700EB71BA /* libvtkalglib-6.2.1.dylib */; };
+		E9474F201CC6926F00EB71BA /* libvtkalglib-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E461CC6926700EB71BA /* libvtkalglib-6.2.dylib */; };
+		E9474F211CC6926F00EB71BA /* libvtkChartsCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E471CC6926700EB71BA /* libvtkChartsCore-6.2.1.dylib */; };
+		E9474F221CC6926F00EB71BA /* libvtkChartsCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E481CC6926700EB71BA /* libvtkChartsCore-6.2.dylib */; };
+		E9474F231CC6926F00EB71BA /* libvtkCommonColor-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E491CC6926700EB71BA /* libvtkCommonColor-6.2.1.dylib */; };
+		E9474F241CC6926F00EB71BA /* libvtkCommonColor-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4A1CC6926700EB71BA /* libvtkCommonColor-6.2.dylib */; };
+		E9474F251CC6926F00EB71BA /* libvtkCommonComputationalGeometry-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4B1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.1.dylib */; };
+		E9474F261CC6926F00EB71BA /* libvtkCommonComputationalGeometry-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4C1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.dylib */; };
+		E9474F271CC6926F00EB71BA /* libvtkCommonCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4D1CC6926700EB71BA /* libvtkCommonCore-6.2.1.dylib */; };
+		E9474F281CC6926F00EB71BA /* libvtkCommonCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4E1CC6926700EB71BA /* libvtkCommonCore-6.2.dylib */; };
+		E9474F291CC6926F00EB71BA /* libvtkCommonDataModel-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E4F1CC6926700EB71BA /* libvtkCommonDataModel-6.2.1.dylib */; };
+		E9474F2A1CC6926F00EB71BA /* libvtkCommonDataModel-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E501CC6926700EB71BA /* libvtkCommonDataModel-6.2.dylib */; };
+		E9474F2B1CC6926F00EB71BA /* libvtkCommonExecutionModel-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E511CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.1.dylib */; };
+		E9474F2C1CC6926F00EB71BA /* libvtkCommonExecutionModel-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E521CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.dylib */; };
+		E9474F2D1CC6926F00EB71BA /* libvtkCommonMath-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E531CC6926700EB71BA /* libvtkCommonMath-6.2.1.dylib */; };
+		E9474F2E1CC6926F00EB71BA /* libvtkCommonMath-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E541CC6926700EB71BA /* libvtkCommonMath-6.2.dylib */; };
+		E9474F2F1CC6926F00EB71BA /* libvtkCommonMisc-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E551CC6926800EB71BA /* libvtkCommonMisc-6.2.1.dylib */; };
+		E9474F301CC6926F00EB71BA /* libvtkCommonMisc-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E561CC6926800EB71BA /* libvtkCommonMisc-6.2.dylib */; };
+		E9474F311CC6926F00EB71BA /* libvtkCommonSystem-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E571CC6926800EB71BA /* libvtkCommonSystem-6.2.1.dylib */; };
+		E9474F321CC6926F00EB71BA /* libvtkCommonSystem-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E581CC6926800EB71BA /* libvtkCommonSystem-6.2.dylib */; };
+		E9474F331CC6926F00EB71BA /* libvtkCommonTransforms-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E591CC6926800EB71BA /* libvtkCommonTransforms-6.2.1.dylib */; };
+		E9474F341CC6926F00EB71BA /* libvtkCommonTransforms-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5A1CC6926800EB71BA /* libvtkCommonTransforms-6.2.dylib */; };
+		E9474F351CC6926F00EB71BA /* libvtkDICOMParser-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5B1CC6926800EB71BA /* libvtkDICOMParser-6.2.1.dylib */; };
+		E9474F361CC6926F00EB71BA /* libvtkDICOMParser-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5C1CC6926800EB71BA /* libvtkDICOMParser-6.2.dylib */; };
+		E9474F371CC6926F00EB71BA /* libvtkDomainsChemistry-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5D1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.1.dylib */; };
+		E9474F381CC6926F00EB71BA /* libvtkDomainsChemistry-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5E1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.dylib */; };
+		E9474F391CC6926F00EB71BA /* libvtkexoIIc-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E5F1CC6926800EB71BA /* libvtkexoIIc-6.2.1.dylib */; };
+		E9474F3A1CC6926F00EB71BA /* libvtkexoIIc-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E601CC6926800EB71BA /* libvtkexoIIc-6.2.dylib */; };
+		E9474F3B1CC6926F00EB71BA /* libvtkexpat-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E611CC6926800EB71BA /* libvtkexpat-6.2.1.dylib */; };
+		E9474F3C1CC6926F00EB71BA /* libvtkexpat-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E621CC6926800EB71BA /* libvtkexpat-6.2.dylib */; };
+		E9474F3D1CC6926F00EB71BA /* libvtkFiltersAMR-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E631CC6926800EB71BA /* libvtkFiltersAMR-6.2.1.dylib */; };
+		E9474F3E1CC6926F00EB71BA /* libvtkFiltersAMR-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E641CC6926800EB71BA /* libvtkFiltersAMR-6.2.dylib */; };
+		E9474F3F1CC6926F00EB71BA /* libvtkFiltersCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E651CC6926800EB71BA /* libvtkFiltersCore-6.2.1.dylib */; };
+		E9474F401CC6926F00EB71BA /* libvtkFiltersCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E661CC6926800EB71BA /* libvtkFiltersCore-6.2.dylib */; };
+		E9474F411CC6926F00EB71BA /* libvtkFiltersExtraction-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E671CC6926800EB71BA /* libvtkFiltersExtraction-6.2.1.dylib */; };
+		E9474F421CC6926F00EB71BA /* libvtkFiltersExtraction-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E681CC6926800EB71BA /* libvtkFiltersExtraction-6.2.dylib */; };
+		E9474F431CC6926F00EB71BA /* libvtkFiltersFlowPaths-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E691CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.1.dylib */; };
+		E9474F441CC6926F00EB71BA /* libvtkFiltersFlowPaths-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6A1CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.dylib */; };
+		E9474F451CC6926F00EB71BA /* libvtkFiltersGeneral-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6B1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.1.dylib */; };
+		E9474F461CC6926F00EB71BA /* libvtkFiltersGeneral-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6C1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.dylib */; };
+		E9474F471CC6926F00EB71BA /* libvtkFiltersGeneric-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6D1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.1.dylib */; };
+		E9474F481CC6926F00EB71BA /* libvtkFiltersGeneric-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6E1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.dylib */; };
+		E9474F491CC6926F00EB71BA /* libvtkFiltersGeometry-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E6F1CC6926800EB71BA /* libvtkFiltersGeometry-6.2.1.dylib */; };
+		E9474F4A1CC6926F00EB71BA /* libvtkFiltersGeometry-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E701CC6926800EB71BA /* libvtkFiltersGeometry-6.2.dylib */; };
+		E9474F4B1CC6926F00EB71BA /* libvtkFiltersHybrid-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E711CC6926900EB71BA /* libvtkFiltersHybrid-6.2.1.dylib */; };
+		E9474F4C1CC6926F00EB71BA /* libvtkFiltersHybrid-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E721CC6926900EB71BA /* libvtkFiltersHybrid-6.2.dylib */; };
+		E9474F4D1CC6926F00EB71BA /* libvtkFiltersHyperTree-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E731CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.1.dylib */; };
+		E9474F4E1CC6926F00EB71BA /* libvtkFiltersHyperTree-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E741CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.dylib */; };
+		E9474F4F1CC6926F00EB71BA /* libvtkFiltersImaging-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E751CC6926900EB71BA /* libvtkFiltersImaging-6.2.1.dylib */; };
+		E9474F501CC6926F00EB71BA /* libvtkFiltersImaging-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E761CC6926900EB71BA /* libvtkFiltersImaging-6.2.dylib */; };
+		E9474F511CC6926F00EB71BA /* libvtkFiltersModeling-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E771CC6926900EB71BA /* libvtkFiltersModeling-6.2.1.dylib */; };
+		E9474F521CC6926F00EB71BA /* libvtkFiltersModeling-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E781CC6926900EB71BA /* libvtkFiltersModeling-6.2.dylib */; };
+		E9474F531CC6926F00EB71BA /* libvtkFiltersParallel-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E791CC6926900EB71BA /* libvtkFiltersParallel-6.2.1.dylib */; };
+		E9474F541CC6926F00EB71BA /* libvtkFiltersParallel-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7A1CC6926900EB71BA /* libvtkFiltersParallel-6.2.dylib */; };
+		E9474F551CC6926F00EB71BA /* libvtkFiltersParallelImaging-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7B1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.1.dylib */; };
+		E9474F561CC6926F00EB71BA /* libvtkFiltersParallelImaging-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7C1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.dylib */; };
+		E9474F571CC6926F00EB71BA /* libvtkFiltersProgrammable-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7D1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.1.dylib */; };
+		E9474F581CC6926F00EB71BA /* libvtkFiltersProgrammable-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7E1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.dylib */; };
+		E9474F591CC6926F00EB71BA /* libvtkFiltersSelection-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E7F1CC6926900EB71BA /* libvtkFiltersSelection-6.2.1.dylib */; };
+		E9474F5A1CC6926F00EB71BA /* libvtkFiltersSelection-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E801CC6926900EB71BA /* libvtkFiltersSelection-6.2.dylib */; };
+		E9474F5B1CC6926F00EB71BA /* libvtkFiltersSMP-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E811CC6926900EB71BA /* libvtkFiltersSMP-6.2.1.dylib */; };
+		E9474F5C1CC6926F00EB71BA /* libvtkFiltersSMP-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E821CC6926900EB71BA /* libvtkFiltersSMP-6.2.dylib */; };
+		E9474F5D1CC6926F00EB71BA /* libvtkFiltersSources-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E831CC6926900EB71BA /* libvtkFiltersSources-6.2.1.dylib */; };
+		E9474F5E1CC6926F00EB71BA /* libvtkFiltersSources-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E841CC6926900EB71BA /* libvtkFiltersSources-6.2.dylib */; };
+		E9474F5F1CC6926F00EB71BA /* libvtkFiltersStatistics-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E851CC6926900EB71BA /* libvtkFiltersStatistics-6.2.1.dylib */; };
+		E9474F601CC6926F00EB71BA /* libvtkFiltersStatistics-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E861CC6926900EB71BA /* libvtkFiltersStatistics-6.2.dylib */; };
+		E9474F611CC6926F00EB71BA /* libvtkFiltersTexture-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E871CC6926900EB71BA /* libvtkFiltersTexture-6.2.1.dylib */; };
+		E9474F621CC6926F00EB71BA /* libvtkFiltersTexture-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E881CC6926900EB71BA /* libvtkFiltersTexture-6.2.dylib */; };
+		E9474F631CC6926F00EB71BA /* libvtkFiltersVerdict-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E891CC6926900EB71BA /* libvtkFiltersVerdict-6.2.1.dylib */; };
+		E9474F641CC6926F00EB71BA /* libvtkFiltersVerdict-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8A1CC6926900EB71BA /* libvtkFiltersVerdict-6.2.dylib */; };
+		E9474F651CC6926F00EB71BA /* libvtkfreetype-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8B1CC6926900EB71BA /* libvtkfreetype-6.2.1.dylib */; };
+		E9474F661CC6926F00EB71BA /* libvtkfreetype-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8C1CC6926900EB71BA /* libvtkfreetype-6.2.dylib */; };
+		E9474F671CC6926F00EB71BA /* libvtkftgl-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8D1CC6926900EB71BA /* libvtkftgl-6.2.1.dylib */; };
+		E9474F681CC6926F00EB71BA /* libvtkftgl-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8E1CC6926900EB71BA /* libvtkftgl-6.2.dylib */; };
+		E9474F691CC6926F00EB71BA /* libvtkGeovisCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E8F1CC6926900EB71BA /* libvtkGeovisCore-6.2.1.dylib */; };
+		E9474F6A1CC6926F00EB71BA /* libvtkGeovisCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E901CC6926900EB71BA /* libvtkGeovisCore-6.2.dylib */; };
+		E9474F6B1CC6926F00EB71BA /* libvtkgl2ps-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E911CC6926900EB71BA /* libvtkgl2ps-6.2.1.dylib */; };
+		E9474F6C1CC6926F00EB71BA /* libvtkgl2ps-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E921CC6926900EB71BA /* libvtkgl2ps-6.2.dylib */; };
+		E9474F6D1CC6926F00EB71BA /* libvtkhdf5_hl-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E931CC6926900EB71BA /* libvtkhdf5_hl-6.2.1.dylib */; };
+		E9474F6E1CC6926F00EB71BA /* libvtkhdf5_hl-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E941CC6926900EB71BA /* libvtkhdf5_hl-6.2.dylib */; };
+		E9474F6F1CC6926F00EB71BA /* libvtkhdf5-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E951CC6926A00EB71BA /* libvtkhdf5-6.2.1.dylib */; };
+		E9474F701CC6926F00EB71BA /* libvtkhdf5-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E961CC6926A00EB71BA /* libvtkhdf5-6.2.dylib */; };
+		E9474F711CC6926F00EB71BA /* libvtkImagingColor-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E971CC6926A00EB71BA /* libvtkImagingColor-6.2.1.dylib */; };
+		E9474F721CC6926F00EB71BA /* libvtkImagingColor-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E981CC6926A00EB71BA /* libvtkImagingColor-6.2.dylib */; };
+		E9474F731CC6926F00EB71BA /* libvtkImagingCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E991CC6926A00EB71BA /* libvtkImagingCore-6.2.1.dylib */; };
+		E9474F741CC6926F00EB71BA /* libvtkImagingCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9A1CC6926A00EB71BA /* libvtkImagingCore-6.2.dylib */; };
+		E9474F751CC6926F00EB71BA /* libvtkImagingFourier-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9B1CC6926A00EB71BA /* libvtkImagingFourier-6.2.1.dylib */; };
+		E9474F761CC6926F00EB71BA /* libvtkImagingFourier-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9C1CC6926A00EB71BA /* libvtkImagingFourier-6.2.dylib */; };
+		E9474F771CC6926F00EB71BA /* libvtkImagingGeneral-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9D1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.1.dylib */; };
+		E9474F781CC6926F00EB71BA /* libvtkImagingGeneral-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9E1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.dylib */; };
+		E9474F791CC6926F00EB71BA /* libvtkImagingHybrid-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474E9F1CC6926A00EB71BA /* libvtkImagingHybrid-6.2.1.dylib */; };
+		E9474F7A1CC6926F00EB71BA /* libvtkImagingHybrid-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA01CC6926A00EB71BA /* libvtkImagingHybrid-6.2.dylib */; };
+		E9474F7B1CC6926F00EB71BA /* libvtkImagingMath-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA11CC6926A00EB71BA /* libvtkImagingMath-6.2.1.dylib */; };
+		E9474F7C1CC6926F00EB71BA /* libvtkImagingMath-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA21CC6926A00EB71BA /* libvtkImagingMath-6.2.dylib */; };
+		E9474F7D1CC6926F00EB71BA /* libvtkImagingMorphological-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA31CC6926A00EB71BA /* libvtkImagingMorphological-6.2.1.dylib */; };
+		E9474F7E1CC6926F00EB71BA /* libvtkImagingMorphological-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA41CC6926A00EB71BA /* libvtkImagingMorphological-6.2.dylib */; };
+		E9474F7F1CC6926F00EB71BA /* libvtkImagingSources-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA51CC6926A00EB71BA /* libvtkImagingSources-6.2.1.dylib */; };
+		E9474F801CC6926F00EB71BA /* libvtkImagingSources-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA61CC6926A00EB71BA /* libvtkImagingSources-6.2.dylib */; };
+		E9474F811CC6926F00EB71BA /* libvtkImagingStatistics-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA71CC6926A00EB71BA /* libvtkImagingStatistics-6.2.1.dylib */; };
+		E9474F821CC6926F00EB71BA /* libvtkImagingStatistics-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA81CC6926A00EB71BA /* libvtkImagingStatistics-6.2.dylib */; };
+		E9474F831CC6926F00EB71BA /* libvtkImagingStencil-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EA91CC6926A00EB71BA /* libvtkImagingStencil-6.2.1.dylib */; };
+		E9474F841CC6926F00EB71BA /* libvtkImagingStencil-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAA1CC6926A00EB71BA /* libvtkImagingStencil-6.2.dylib */; };
+		E9474F851CC6926F00EB71BA /* libvtkInfovisCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAB1CC6926A00EB71BA /* libvtkInfovisCore-6.2.1.dylib */; };
+		E9474F861CC6926F00EB71BA /* libvtkInfovisCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAC1CC6926A00EB71BA /* libvtkInfovisCore-6.2.dylib */; };
+		E9474F871CC6926F00EB71BA /* libvtkInfovisLayout-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAD1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.1.dylib */; };
+		E9474F881CC6926F00EB71BA /* libvtkInfovisLayout-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAE1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.dylib */; };
+		E9474F891CC6926F00EB71BA /* libvtkInteractionImage-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EAF1CC6926A00EB71BA /* libvtkInteractionImage-6.2.1.dylib */; };
+		E9474F8A1CC6926F00EB71BA /* libvtkInteractionImage-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB01CC6926A00EB71BA /* libvtkInteractionImage-6.2.dylib */; };
+		E9474F8B1CC6926F00EB71BA /* libvtkInteractionStyle-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB11CC6926A00EB71BA /* libvtkInteractionStyle-6.2.1.dylib */; };
+		E9474F8C1CC6926F00EB71BA /* libvtkInteractionStyle-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB21CC6926A00EB71BA /* libvtkInteractionStyle-6.2.dylib */; };
+		E9474F8D1CC6926F00EB71BA /* libvtkInteractionWidgets-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB31CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.1.dylib */; };
+		E9474F8E1CC6926F00EB71BA /* libvtkInteractionWidgets-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB41CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.dylib */; };
+		E9474F8F1CC6926F00EB71BA /* libvtkIOAMR-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB51CC6926B00EB71BA /* libvtkIOAMR-6.2.1.dylib */; };
+		E9474F901CC6926F00EB71BA /* libvtkIOAMR-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB61CC6926B00EB71BA /* libvtkIOAMR-6.2.dylib */; };
+		E9474F911CC6926F00EB71BA /* libvtkIOCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB71CC6926B00EB71BA /* libvtkIOCore-6.2.1.dylib */; };
+		E9474F921CC6926F00EB71BA /* libvtkIOCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB81CC6926B00EB71BA /* libvtkIOCore-6.2.dylib */; };
+		E9474F931CC6926F00EB71BA /* libvtkIOEnSight-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EB91CC6926B00EB71BA /* libvtkIOEnSight-6.2.1.dylib */; };
+		E9474F941CC6926F00EB71BA /* libvtkIOEnSight-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBA1CC6926B00EB71BA /* libvtkIOEnSight-6.2.dylib */; };
+		E9474F951CC6926F00EB71BA /* libvtkIOExodus-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBB1CC6926B00EB71BA /* libvtkIOExodus-6.2.1.dylib */; };
+		E9474F961CC6926F00EB71BA /* libvtkIOExodus-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBC1CC6926B00EB71BA /* libvtkIOExodus-6.2.dylib */; };
+		E9474F971CC6926F00EB71BA /* libvtkIOExport-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBD1CC6926B00EB71BA /* libvtkIOExport-6.2.1.dylib */; };
+		E9474F981CC6926F00EB71BA /* libvtkIOExport-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBE1CC6926B00EB71BA /* libvtkIOExport-6.2.dylib */; };
+		E9474F991CC6926F00EB71BA /* libvtkIOGeometry-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EBF1CC6926B00EB71BA /* libvtkIOGeometry-6.2.1.dylib */; };
+		E9474F9A1CC6926F00EB71BA /* libvtkIOGeometry-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC01CC6926B00EB71BA /* libvtkIOGeometry-6.2.dylib */; };
+		E9474F9B1CC6926F00EB71BA /* libvtkIOImage-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC11CC6926C00EB71BA /* libvtkIOImage-6.2.1.dylib */; };
+		E9474F9C1CC6926F00EB71BA /* libvtkIOImage-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC21CC6926C00EB71BA /* libvtkIOImage-6.2.dylib */; };
+		E9474F9D1CC6926F00EB71BA /* libvtkIOImport-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC31CC6926C00EB71BA /* libvtkIOImport-6.2.1.dylib */; };
+		E9474F9E1CC6926F00EB71BA /* libvtkIOImport-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC41CC6926C00EB71BA /* libvtkIOImport-6.2.dylib */; };
+		E9474F9F1CC6926F00EB71BA /* libvtkIOInfovis-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC51CC6926C00EB71BA /* libvtkIOInfovis-6.2.1.dylib */; };
+		E9474FA01CC6926F00EB71BA /* libvtkIOInfovis-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC61CC6926C00EB71BA /* libvtkIOInfovis-6.2.dylib */; };
+		E9474FA11CC6926F00EB71BA /* libvtkIOLegacy-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC71CC6926C00EB71BA /* libvtkIOLegacy-6.2.1.dylib */; };
+		E9474FA21CC6926F00EB71BA /* libvtkIOLegacy-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC81CC6926C00EB71BA /* libvtkIOLegacy-6.2.dylib */; };
+		E9474FA31CC6926F00EB71BA /* libvtkIOLSDyna-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EC91CC6926C00EB71BA /* libvtkIOLSDyna-6.2.1.dylib */; };
+		E9474FA41CC6926F00EB71BA /* libvtkIOLSDyna-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECA1CC6926C00EB71BA /* libvtkIOLSDyna-6.2.dylib */; };
+		E9474FA51CC6926F00EB71BA /* libvtkIOMINC-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECB1CC6926C00EB71BA /* libvtkIOMINC-6.2.1.dylib */; };
+		E9474FA61CC6926F00EB71BA /* libvtkIOMINC-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECC1CC6926C00EB71BA /* libvtkIOMINC-6.2.dylib */; };
+		E9474FA71CC6926F00EB71BA /* libvtkIOMovie-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECD1CC6926C00EB71BA /* libvtkIOMovie-6.2.1.dylib */; };
+		E9474FA81CC6926F00EB71BA /* libvtkIOMovie-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECE1CC6926C00EB71BA /* libvtkIOMovie-6.2.dylib */; };
+		E9474FA91CC6926F00EB71BA /* libvtkIONetCDF-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ECF1CC6926C00EB71BA /* libvtkIONetCDF-6.2.1.dylib */; };
+		E9474FAA1CC6926F00EB71BA /* libvtkIONetCDF-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED01CC6926C00EB71BA /* libvtkIONetCDF-6.2.dylib */; };
+		E9474FAB1CC6926F00EB71BA /* libvtkIOParallel-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED11CC6926C00EB71BA /* libvtkIOParallel-6.2.1.dylib */; };
+		E9474FAC1CC6926F00EB71BA /* libvtkIOParallel-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED21CC6926C00EB71BA /* libvtkIOParallel-6.2.dylib */; };
+		E9474FAD1CC6926F00EB71BA /* libvtkIOParallelXML-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED31CC6926C00EB71BA /* libvtkIOParallelXML-6.2.1.dylib */; };
+		E9474FAE1CC6926F00EB71BA /* libvtkIOParallelXML-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED41CC6926C00EB71BA /* libvtkIOParallelXML-6.2.dylib */; };
+		E9474FAF1CC6926F00EB71BA /* libvtkIOPLY-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED51CC6926C00EB71BA /* libvtkIOPLY-6.2.1.dylib */; };
+		E9474FB01CC6926F00EB71BA /* libvtkIOPLY-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED61CC6926C00EB71BA /* libvtkIOPLY-6.2.dylib */; };
+		E9474FB11CC6926F00EB71BA /* libvtkIOSQL-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED71CC6926C00EB71BA /* libvtkIOSQL-6.2.1.dylib */; };
+		E9474FB21CC6926F00EB71BA /* libvtkIOSQL-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED81CC6926C00EB71BA /* libvtkIOSQL-6.2.dylib */; };
+		E9474FB31CC6926F00EB71BA /* libvtkIOVideo-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474ED91CC6926C00EB71BA /* libvtkIOVideo-6.2.1.dylib */; };
+		E9474FB41CC6926F00EB71BA /* libvtkIOVideo-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDA1CC6926C00EB71BA /* libvtkIOVideo-6.2.dylib */; };
+		E9474FB51CC6926F00EB71BA /* libvtkIOXML-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDB1CC6926C00EB71BA /* libvtkIOXML-6.2.1.dylib */; };
+		E9474FB61CC6926F00EB71BA /* libvtkIOXML-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDC1CC6926C00EB71BA /* libvtkIOXML-6.2.dylib */; };
+		E9474FB71CC6926F00EB71BA /* libvtkIOXMLParser-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDD1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.1.dylib */; };
+		E9474FB81CC6926F00EB71BA /* libvtkIOXMLParser-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDE1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.dylib */; };
+		E9474FB91CC6926F00EB71BA /* libvtkjpeg-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EDF1CC6926C00EB71BA /* libvtkjpeg-6.2.1.dylib */; };
+		E9474FBA1CC6926F00EB71BA /* libvtkjpeg-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE01CC6926C00EB71BA /* libvtkjpeg-6.2.dylib */; };
+		E9474FBB1CC6926F00EB71BA /* libvtkjsoncpp-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE11CC6926C00EB71BA /* libvtkjsoncpp-6.2.1.dylib */; };
+		E9474FBC1CC6926F00EB71BA /* libvtkjsoncpp-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE21CC6926C00EB71BA /* libvtkjsoncpp-6.2.dylib */; };
+		E9474FBD1CC6926F00EB71BA /* libvtklibxml2-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE31CC6926D00EB71BA /* libvtklibxml2-6.2.1.dylib */; };
+		E9474FBE1CC6926F00EB71BA /* libvtklibxml2-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE41CC6926D00EB71BA /* libvtklibxml2-6.2.dylib */; };
+		E9474FBF1CC6926F00EB71BA /* libvtkmetaio-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE51CC6926D00EB71BA /* libvtkmetaio-6.2.1.dylib */; };
+		E9474FC01CC6926F00EB71BA /* libvtkmetaio-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE61CC6926D00EB71BA /* libvtkmetaio-6.2.dylib */; };
+		E9474FC11CC6926F00EB71BA /* libvtkNetCDF_cxx-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE71CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.1.dylib */; };
+		E9474FC21CC6926F00EB71BA /* libvtkNetCDF_cxx-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE81CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.dylib */; };
+		E9474FC31CC6926F00EB71BA /* libvtkNetCDF-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EE91CC6926D00EB71BA /* libvtkNetCDF-6.2.1.dylib */; };
+		E9474FC41CC6926F00EB71BA /* libvtkNetCDF-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EEA1CC6926D00EB71BA /* libvtkNetCDF-6.2.dylib */; };
+		E9474FC51CC6926F00EB71BA /* libvtkoggtheora-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EEB1CC6926D00EB71BA /* libvtkoggtheora-6.2.1.dylib */; };
+		E9474FC61CC6926F00EB71BA /* libvtkoggtheora-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EEC1CC6926D00EB71BA /* libvtkoggtheora-6.2.dylib */; };
+		E9474FC71CC6926F00EB71BA /* libvtkParallelCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EED1CC6926D00EB71BA /* libvtkParallelCore-6.2.1.dylib */; };
+		E9474FC81CC6926F00EB71BA /* libvtkParallelCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EEE1CC6926D00EB71BA /* libvtkParallelCore-6.2.dylib */; };
+		E9474FC91CC6926F00EB71BA /* libvtkpng-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EEF1CC6926D00EB71BA /* libvtkpng-6.2.1.dylib */; };
+		E9474FCA1CC6926F00EB71BA /* libvtkpng-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF01CC6926D00EB71BA /* libvtkpng-6.2.dylib */; };
+		E9474FCB1CC6926F00EB71BA /* libvtkproj4-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF11CC6926D00EB71BA /* libvtkproj4-6.2.1.dylib */; };
+		E9474FCC1CC6926F00EB71BA /* libvtkproj4-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF21CC6926D00EB71BA /* libvtkproj4-6.2.dylib */; };
+		E9474FCD1CC6926F00EB71BA /* libvtkRenderingAnnotation-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF31CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.1.dylib */; };
+		E9474FCE1CC6926F00EB71BA /* libvtkRenderingAnnotation-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF41CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.dylib */; };
+		E9474FCF1CC6926F00EB71BA /* libvtkRenderingContext2D-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF51CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.1.dylib */; };
+		E9474FD01CC6926F00EB71BA /* libvtkRenderingContext2D-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF61CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.dylib */; };
+		E9474FD11CC6926F00EB71BA /* libvtkRenderingContextOpenGL-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF71CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.1.dylib */; };
+		E9474FD21CC6926F00EB71BA /* libvtkRenderingContextOpenGL-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF81CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.dylib */; };
+		E9474FD31CC6926F00EB71BA /* libvtkRenderingCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EF91CC6926D00EB71BA /* libvtkRenderingCore-6.2.1.dylib */; };
+		E9474FD41CC6926F00EB71BA /* libvtkRenderingCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFA1CC6926D00EB71BA /* libvtkRenderingCore-6.2.dylib */; };
+		E9474FD51CC6926F00EB71BA /* libvtkRenderingFreeType-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFB1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.1.dylib */; };
+		E9474FD61CC6926F00EB71BA /* libvtkRenderingFreeType-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFC1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.dylib */; };
+		E9474FD71CC6926F00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFD1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.1.dylib */; };
+		E9474FD81CC6926F00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFE1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.dylib */; };
+		E9474FD91CC6926F00EB71BA /* libvtkRenderingGL2PS-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474EFF1CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.1.dylib */; };
+		E9474FDA1CC6926F00EB71BA /* libvtkRenderingGL2PS-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F001CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.dylib */; };
+		E9474FDB1CC6926F00EB71BA /* libvtkRenderingImage-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F011CC6926E00EB71BA /* libvtkRenderingImage-6.2.1.dylib */; };
+		E9474FDC1CC6926F00EB71BA /* libvtkRenderingImage-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F021CC6926E00EB71BA /* libvtkRenderingImage-6.2.dylib */; };
+		E9474FDD1CC6926F00EB71BA /* libvtkRenderingLabel-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F031CC6926E00EB71BA /* libvtkRenderingLabel-6.2.1.dylib */; };
+		E9474FDE1CC6926F00EB71BA /* libvtkRenderingLabel-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F041CC6926E00EB71BA /* libvtkRenderingLabel-6.2.dylib */; };
+		E9474FDF1CC6926F00EB71BA /* libvtkRenderingLIC-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F051CC6926E00EB71BA /* libvtkRenderingLIC-6.2.1.dylib */; };
+		E9474FE01CC6926F00EB71BA /* libvtkRenderingLIC-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F061CC6926E00EB71BA /* libvtkRenderingLIC-6.2.dylib */; };
+		E9474FE11CC6926F00EB71BA /* libvtkRenderingLOD-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F071CC6926E00EB71BA /* libvtkRenderingLOD-6.2.1.dylib */; };
+		E9474FE21CC6926F00EB71BA /* libvtkRenderingLOD-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F081CC6926E00EB71BA /* libvtkRenderingLOD-6.2.dylib */; };
+		E9474FE31CC6926F00EB71BA /* libvtkRenderingOpenGL-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F091CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.1.dylib */; };
+		E9474FE41CC6926F00EB71BA /* libvtkRenderingOpenGL-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0A1CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.dylib */; };
+		E9474FE51CC6926F00EB71BA /* libvtkRenderingVolume-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0B1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.1.dylib */; };
+		E9474FE61CC6926F00EB71BA /* libvtkRenderingVolume-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0C1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.dylib */; };
+		E9474FE71CC6926F00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0D1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.1.dylib */; };
+		E9474FE81CC6926F00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0E1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.dylib */; };
+		E9474FE91CC6926F00EB71BA /* libvtksqlite-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F0F1CC6926E00EB71BA /* libvtksqlite-6.2.1.dylib */; };
+		E9474FEA1CC6926F00EB71BA /* libvtksqlite-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F101CC6926E00EB71BA /* libvtksqlite-6.2.dylib */; };
+		E9474FEB1CC6926F00EB71BA /* libvtksys-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F111CC6926E00EB71BA /* libvtksys-6.2.1.dylib */; };
+		E9474FEC1CC6926F00EB71BA /* libvtksys-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F121CC6926E00EB71BA /* libvtksys-6.2.dylib */; };
+		E9474FED1CC6926F00EB71BA /* libvtktiff-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F131CC6926E00EB71BA /* libvtktiff-6.2.1.dylib */; };
+		E9474FEE1CC6926F00EB71BA /* libvtktiff-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F141CC6926E00EB71BA /* libvtktiff-6.2.dylib */; };
+		E9474FEF1CC6926F00EB71BA /* libvtkverdict-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F151CC6926E00EB71BA /* libvtkverdict-6.2.1.dylib */; };
+		E9474FF01CC6926F00EB71BA /* libvtkverdict-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F161CC6926E00EB71BA /* libvtkverdict-6.2.dylib */; };
+		E9474FF11CC6926F00EB71BA /* libvtkViewsContext2D-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F171CC6926E00EB71BA /* libvtkViewsContext2D-6.2.1.dylib */; };
+		E9474FF21CC6926F00EB71BA /* libvtkViewsContext2D-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F181CC6926E00EB71BA /* libvtkViewsContext2D-6.2.dylib */; };
+		E9474FF31CC6926F00EB71BA /* libvtkViewsCore-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F191CC6926F00EB71BA /* libvtkViewsCore-6.2.1.dylib */; };
+		E9474FF41CC6926F00EB71BA /* libvtkViewsCore-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1A1CC6926F00EB71BA /* libvtkViewsCore-6.2.dylib */; };
+		E9474FF51CC6926F00EB71BA /* libvtkViewsInfovis-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1B1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.1.dylib */; };
+		E9474FF61CC6926F00EB71BA /* libvtkViewsInfovis-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1C1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.dylib */; };
+		E9474FF71CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1D1CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib */; };
+		E9474FF81CC6926F00EB71BA /* libvtkzlib-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1E1CC6926F00EB71BA /* libvtkzlib-6.2.dylib */; };
+		E9474FFB1CC69ABF00EB71BA /* gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9474FF91CC69ABF00EB71BA /* gradient.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +323,305 @@
 /* Begin PBXFileReference section */
 		E9474D9D1CC691A100EB71BA /* Initialisation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Initialisation; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9474DA01CC691A100EB71BA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E9474DA71CC6925700EB71BA /* libITKBiasCorrection-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKBiasCorrection-4.7.a"; path = "../../../../usr/local/itk/lib/libITKBiasCorrection-4.7.a"; sourceTree = "<group>"; };
+		E9474DA81CC6925700EB71BA /* libITKBioCell-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKBioCell-4.7.a"; path = "../../../../usr/local/itk/lib/libITKBioCell-4.7.a"; sourceTree = "<group>"; };
+		E9474DA91CC6925700EB71BA /* libITKCommon-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKCommon-4.7.a"; path = "../../../../usr/local/itk/lib/libITKCommon-4.7.a"; sourceTree = "<group>"; };
+		E9474DAA1CC6925700EB71BA /* libITKDeprecated-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKDeprecated-4.7.a"; path = "../../../../usr/local/itk/lib/libITKDeprecated-4.7.a"; sourceTree = "<group>"; };
+		E9474DAB1CC6925700EB71BA /* libITKDICOMParser-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKDICOMParser-4.7.a"; path = "../../../../usr/local/itk/lib/libITKDICOMParser-4.7.a"; sourceTree = "<group>"; };
+		E9474DAC1CC6925700EB71BA /* libitkdouble-conversion-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkdouble-conversion-4.7.a"; path = "../../../../usr/local/itk/lib/libitkdouble-conversion-4.7.a"; sourceTree = "<group>"; };
+		E9474DAD1CC6925700EB71BA /* libITKEXPAT-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKEXPAT-4.7.a"; path = "../../../../usr/local/itk/lib/libITKEXPAT-4.7.a"; sourceTree = "<group>"; };
+		E9474DAE1CC6925700EB71BA /* libITKFEM-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKFEM-4.7.a"; path = "../../../../usr/local/itk/lib/libITKFEM-4.7.a"; sourceTree = "<group>"; };
+		E9474DAF1CC6925700EB71BA /* libitkgdcmCommon-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmCommon-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmCommon-4.7.a"; sourceTree = "<group>"; };
+		E9474DB01CC6925700EB71BA /* libitkgdcmDICT-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmDICT-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmDICT-4.7.a"; sourceTree = "<group>"; };
+		E9474DB11CC6925700EB71BA /* libitkgdcmDSED-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmDSED-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmDSED-4.7.a"; sourceTree = "<group>"; };
+		E9474DB21CC6925700EB71BA /* libitkgdcmIOD-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmIOD-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmIOD-4.7.a"; sourceTree = "<group>"; };
+		E9474DB31CC6925700EB71BA /* libitkgdcmjpeg8-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmjpeg8-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmjpeg8-4.7.a"; sourceTree = "<group>"; };
+		E9474DB41CC6925700EB71BA /* libitkgdcmjpeg12-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmjpeg12-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmjpeg12-4.7.a"; sourceTree = "<group>"; };
+		E9474DB51CC6925700EB71BA /* libitkgdcmjpeg16-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmjpeg16-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmjpeg16-4.7.a"; sourceTree = "<group>"; };
+		E9474DB61CC6925700EB71BA /* libitkgdcmMSFF-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmMSFF-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmMSFF-4.7.a"; sourceTree = "<group>"; };
+		E9474DB71CC6925700EB71BA /* libitkgdcmuuid-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkgdcmuuid-4.7.a"; path = "../../../../usr/local/itk/lib/libitkgdcmuuid-4.7.a"; sourceTree = "<group>"; };
+		E9474DB81CC6925700EB71BA /* libITKgiftiio-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKgiftiio-4.7.a"; path = "../../../../usr/local/itk/lib/libITKgiftiio-4.7.a"; sourceTree = "<group>"; };
+		E9474DB91CC6925700EB71BA /* libitkhdf5_cpp-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkhdf5_cpp-4.7.a"; path = "../../../../usr/local/itk/lib/libitkhdf5_cpp-4.7.a"; sourceTree = "<group>"; };
+		E9474DBA1CC6925700EB71BA /* libitkhdf5-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkhdf5-4.7.a"; path = "../../../../usr/local/itk/lib/libitkhdf5-4.7.a"; sourceTree = "<group>"; };
+		E9474DBB1CC6925700EB71BA /* libITKIOBioRad-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOBioRad-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOBioRad-4.7.a"; sourceTree = "<group>"; };
+		E9474DBC1CC6925700EB71BA /* libITKIOBMP-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOBMP-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOBMP-4.7.a"; sourceTree = "<group>"; };
+		E9474DBD1CC6925700EB71BA /* libITKIOCSV-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOCSV-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOCSV-4.7.a"; sourceTree = "<group>"; };
+		E9474DBE1CC6925700EB71BA /* libITKIOGDCM-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOGDCM-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOGDCM-4.7.a"; sourceTree = "<group>"; };
+		E9474DBF1CC6925700EB71BA /* libITKIOGE-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOGE-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOGE-4.7.a"; sourceTree = "<group>"; };
+		E9474DC01CC6925700EB71BA /* libITKIOGIPL-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOGIPL-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOGIPL-4.7.a"; sourceTree = "<group>"; };
+		E9474DC11CC6925700EB71BA /* libITKIOHDF5-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOHDF5-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOHDF5-4.7.a"; sourceTree = "<group>"; };
+		E9474DC21CC6925700EB71BA /* libITKIOImageBase-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOImageBase-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOImageBase-4.7.a"; sourceTree = "<group>"; };
+		E9474DC31CC6925700EB71BA /* libITKIOIPL-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOIPL-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOIPL-4.7.a"; sourceTree = "<group>"; };
+		E9474DC41CC6925700EB71BA /* libITKIOJPEG-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOJPEG-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOJPEG-4.7.a"; sourceTree = "<group>"; };
+		E9474DC51CC6925700EB71BA /* libITKIOLSM-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOLSM-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOLSM-4.7.a"; sourceTree = "<group>"; };
+		E9474DC61CC6925700EB71BA /* libITKIOMesh-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOMesh-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOMesh-4.7.a"; sourceTree = "<group>"; };
+		E9474DC71CC6925700EB71BA /* libITKIOMeta-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOMeta-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOMeta-4.7.a"; sourceTree = "<group>"; };
+		E9474DC81CC6925700EB71BA /* libITKIOMRC-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOMRC-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOMRC-4.7.a"; sourceTree = "<group>"; };
+		E9474DC91CC6925700EB71BA /* libITKIONIFTI-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIONIFTI-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIONIFTI-4.7.a"; sourceTree = "<group>"; };
+		E9474DCA1CC6925700EB71BA /* libITKIONRRD-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIONRRD-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIONRRD-4.7.a"; sourceTree = "<group>"; };
+		E9474DCB1CC6925700EB71BA /* libITKIOPNG-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOPNG-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOPNG-4.7.a"; sourceTree = "<group>"; };
+		E9474DCC1CC6925700EB71BA /* libITKIOSiemens-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOSiemens-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOSiemens-4.7.a"; sourceTree = "<group>"; };
+		E9474DCD1CC6925700EB71BA /* libITKIOSpatialObjects-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOSpatialObjects-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOSpatialObjects-4.7.a"; sourceTree = "<group>"; };
+		E9474DCE1CC6925700EB71BA /* libITKIOStimulate-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOStimulate-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOStimulate-4.7.a"; sourceTree = "<group>"; };
+		E9474DCF1CC6925700EB71BA /* libITKIOTIFF-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOTIFF-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOTIFF-4.7.a"; sourceTree = "<group>"; };
+		E9474DD01CC6925700EB71BA /* libITKIOTransformBase-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOTransformBase-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOTransformBase-4.7.a"; sourceTree = "<group>"; };
+		E9474DD11CC6925700EB71BA /* libITKIOTransformHDF5-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOTransformHDF5-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOTransformHDF5-4.7.a"; sourceTree = "<group>"; };
+		E9474DD21CC6925700EB71BA /* libITKIOTransformInsightLegacy-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOTransformInsightLegacy-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOTransformInsightLegacy-4.7.a"; sourceTree = "<group>"; };
+		E9474DD31CC6925700EB71BA /* libITKIOTransformMatlab-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOTransformMatlab-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOTransformMatlab-4.7.a"; sourceTree = "<group>"; };
+		E9474DD41CC6925700EB71BA /* libITKIOVTK-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOVTK-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOVTK-4.7.a"; sourceTree = "<group>"; };
+		E9474DD51CC6925700EB71BA /* libITKIOXML-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKIOXML-4.7.a"; path = "../../../../usr/local/itk/lib/libITKIOXML-4.7.a"; sourceTree = "<group>"; };
+		E9474DD61CC6925700EB71BA /* libitkjpeg-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkjpeg-4.7.a"; path = "../../../../usr/local/itk/lib/libitkjpeg-4.7.a"; sourceTree = "<group>"; };
+		E9474DD71CC6925700EB71BA /* libITKKLMRegionGrowing-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKKLMRegionGrowing-4.7.a"; path = "../../../../usr/local/itk/lib/libITKKLMRegionGrowing-4.7.a"; sourceTree = "<group>"; };
+		E9474DD81CC6925700EB71BA /* libITKLabelMap-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKLabelMap-4.7.a"; path = "../../../../usr/local/itk/lib/libITKLabelMap-4.7.a"; sourceTree = "<group>"; };
+		E9474DD91CC6925700EB71BA /* libITKMesh-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKMesh-4.7.a"; path = "../../../../usr/local/itk/lib/libITKMesh-4.7.a"; sourceTree = "<group>"; };
+		E9474DDA1CC6925700EB71BA /* libITKMetaIO-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKMetaIO-4.7.a"; path = "../../../../usr/local/itk/lib/libITKMetaIO-4.7.a"; sourceTree = "<group>"; };
+		E9474DDB1CC6925700EB71BA /* libitkNetlibSlatec-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkNetlibSlatec-4.7.a"; path = "../../../../usr/local/itk/lib/libitkNetlibSlatec-4.7.a"; sourceTree = "<group>"; };
+		E9474DDC1CC6925700EB71BA /* libITKniftiio-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKniftiio-4.7.a"; path = "../../../../usr/local/itk/lib/libITKniftiio-4.7.a"; sourceTree = "<group>"; };
+		E9474DDD1CC6925700EB71BA /* libITKNrrdIO-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKNrrdIO-4.7.a"; path = "../../../../usr/local/itk/lib/libITKNrrdIO-4.7.a"; sourceTree = "<group>"; };
+		E9474DDE1CC6925700EB71BA /* libitkopenjpeg-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkopenjpeg-4.7.a"; path = "../../../../usr/local/itk/lib/libitkopenjpeg-4.7.a"; sourceTree = "<group>"; };
+		E9474DDF1CC6925700EB71BA /* libITKOptimizers-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKOptimizers-4.7.a"; path = "../../../../usr/local/itk/lib/libITKOptimizers-4.7.a"; sourceTree = "<group>"; };
+		E9474DE01CC6925700EB71BA /* libITKOptimizersv4-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKOptimizersv4-4.7.a"; path = "../../../../usr/local/itk/lib/libITKOptimizersv4-4.7.a"; sourceTree = "<group>"; };
+		E9474DE11CC6925700EB71BA /* libITKPath-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKPath-4.7.a"; path = "../../../../usr/local/itk/lib/libITKPath-4.7.a"; sourceTree = "<group>"; };
+		E9474DE21CC6925700EB71BA /* libitkpng-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkpng-4.7.a"; path = "../../../../usr/local/itk/lib/libitkpng-4.7.a"; sourceTree = "<group>"; };
+		E9474DE31CC6925700EB71BA /* libITKPolynomials-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKPolynomials-4.7.a"; path = "../../../../usr/local/itk/lib/libITKPolynomials-4.7.a"; sourceTree = "<group>"; };
+		E9474DE41CC6925700EB71BA /* libITKQuadEdgeMesh-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKQuadEdgeMesh-4.7.a"; path = "../../../../usr/local/itk/lib/libITKQuadEdgeMesh-4.7.a"; sourceTree = "<group>"; };
+		E9474DE51CC6925700EB71BA /* libITKSpatialObjects-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKSpatialObjects-4.7.a"; path = "../../../../usr/local/itk/lib/libITKSpatialObjects-4.7.a"; sourceTree = "<group>"; };
+		E9474DE61CC6925700EB71BA /* libITKStatistics-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKStatistics-4.7.a"; path = "../../../../usr/local/itk/lib/libITKStatistics-4.7.a"; sourceTree = "<group>"; };
+		E9474DE71CC6925700EB71BA /* libitksys-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitksys-4.7.a"; path = "../../../../usr/local/itk/lib/libitksys-4.7.a"; sourceTree = "<group>"; };
+		E9474DE81CC6925700EB71BA /* libitktiff-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitktiff-4.7.a"; path = "../../../../usr/local/itk/lib/libitktiff-4.7.a"; sourceTree = "<group>"; };
+		E9474DE91CC6925700EB71BA /* libitkv3p_lsqr-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkv3p_lsqr-4.7.a"; path = "../../../../usr/local/itk/lib/libitkv3p_lsqr-4.7.a"; sourceTree = "<group>"; };
+		E9474DEA1CC6925700EB71BA /* libitkv3p_netlib-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkv3p_netlib-4.7.a"; path = "../../../../usr/local/itk/lib/libitkv3p_netlib-4.7.a"; sourceTree = "<group>"; };
+		E9474DEB1CC6925700EB71BA /* libitkvcl-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkvcl-4.7.a"; path = "../../../../usr/local/itk/lib/libitkvcl-4.7.a"; sourceTree = "<group>"; };
+		E9474DEC1CC6925700EB71BA /* libITKVideoCore-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKVideoCore-4.7.a"; path = "../../../../usr/local/itk/lib/libITKVideoCore-4.7.a"; sourceTree = "<group>"; };
+		E9474DED1CC6925700EB71BA /* libITKVideoIO-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKVideoIO-4.7.a"; path = "../../../../usr/local/itk/lib/libITKVideoIO-4.7.a"; sourceTree = "<group>"; };
+		E9474DEE1CC6925700EB71BA /* libitkvnl_algo-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkvnl_algo-4.7.a"; path = "../../../../usr/local/itk/lib/libitkvnl_algo-4.7.a"; sourceTree = "<group>"; };
+		E9474DEF1CC6925700EB71BA /* libitkvnl-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkvnl-4.7.a"; path = "../../../../usr/local/itk/lib/libitkvnl-4.7.a"; sourceTree = "<group>"; };
+		E9474DF01CC6925700EB71BA /* libITKVNLInstantiation-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKVNLInstantiation-4.7.a"; path = "../../../../usr/local/itk/lib/libITKVNLInstantiation-4.7.a"; sourceTree = "<group>"; };
+		E9474DF11CC6925700EB71BA /* libITKVTK-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKVTK-4.7.a"; path = "../../../../usr/local/itk/lib/libITKVTK-4.7.a"; sourceTree = "<group>"; };
+		E9474DF21CC6925700EB71BA /* libITKVtkGlue-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKVtkGlue-4.7.a"; path = "../../../../usr/local/itk/lib/libITKVtkGlue-4.7.a"; sourceTree = "<group>"; };
+		E9474DF31CC6925700EB71BA /* libITKWatersheds-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKWatersheds-4.7.a"; path = "../../../../usr/local/itk/lib/libITKWatersheds-4.7.a"; sourceTree = "<group>"; };
+		E9474DF41CC6925700EB71BA /* libitkzlib-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libitkzlib-4.7.a"; path = "../../../../usr/local/itk/lib/libitkzlib-4.7.a"; sourceTree = "<group>"; };
+		E9474DF51CC6925700EB71BA /* libITKznz-4.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libITKznz-4.7.a"; path = "../../../../usr/local/itk/lib/libITKznz-4.7.a"; sourceTree = "<group>"; };
+		E9474E451CC6926700EB71BA /* libvtkalglib-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkalglib-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkalglib-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E461CC6926700EB71BA /* libvtkalglib-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkalglib-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkalglib-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E471CC6926700EB71BA /* libvtkChartsCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkChartsCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkChartsCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E481CC6926700EB71BA /* libvtkChartsCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkChartsCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkChartsCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E491CC6926700EB71BA /* libvtkCommonColor-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonColor-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonColor-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E4A1CC6926700EB71BA /* libvtkCommonColor-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonColor-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonColor-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E4B1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonComputationalGeometry-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonComputationalGeometry-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E4C1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonComputationalGeometry-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonComputationalGeometry-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E4D1CC6926700EB71BA /* libvtkCommonCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E4E1CC6926700EB71BA /* libvtkCommonCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E4F1CC6926700EB71BA /* libvtkCommonDataModel-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonDataModel-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonDataModel-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E501CC6926700EB71BA /* libvtkCommonDataModel-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonDataModel-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonDataModel-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E511CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonExecutionModel-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonExecutionModel-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E521CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonExecutionModel-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonExecutionModel-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E531CC6926700EB71BA /* libvtkCommonMath-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMath-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonMath-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E541CC6926700EB71BA /* libvtkCommonMath-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMath-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonMath-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E551CC6926800EB71BA /* libvtkCommonMisc-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMisc-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonMisc-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E561CC6926800EB71BA /* libvtkCommonMisc-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMisc-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonMisc-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E571CC6926800EB71BA /* libvtkCommonSystem-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonSystem-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonSystem-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E581CC6926800EB71BA /* libvtkCommonSystem-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonSystem-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonSystem-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E591CC6926800EB71BA /* libvtkCommonTransforms-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonTransforms-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonTransforms-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E5A1CC6926800EB71BA /* libvtkCommonTransforms-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonTransforms-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkCommonTransforms-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E5B1CC6926800EB71BA /* libvtkDICOMParser-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDICOMParser-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkDICOMParser-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E5C1CC6926800EB71BA /* libvtkDICOMParser-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDICOMParser-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkDICOMParser-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E5D1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDomainsChemistry-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkDomainsChemistry-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E5E1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDomainsChemistry-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkDomainsChemistry-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E5F1CC6926800EB71BA /* libvtkexoIIc-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexoIIc-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkexoIIc-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E601CC6926800EB71BA /* libvtkexoIIc-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexoIIc-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkexoIIc-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E611CC6926800EB71BA /* libvtkexpat-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexpat-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkexpat-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E621CC6926800EB71BA /* libvtkexpat-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexpat-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkexpat-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E631CC6926800EB71BA /* libvtkFiltersAMR-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersAMR-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersAMR-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E641CC6926800EB71BA /* libvtkFiltersAMR-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersAMR-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersAMR-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E651CC6926800EB71BA /* libvtkFiltersCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E661CC6926800EB71BA /* libvtkFiltersCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E671CC6926800EB71BA /* libvtkFiltersExtraction-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersExtraction-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersExtraction-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E681CC6926800EB71BA /* libvtkFiltersExtraction-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersExtraction-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersExtraction-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E691CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersFlowPaths-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersFlowPaths-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E6A1CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersFlowPaths-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersFlowPaths-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E6B1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneral-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeneral-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E6C1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneral-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeneral-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E6D1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneric-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeneric-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E6E1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneric-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeneric-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E6F1CC6926800EB71BA /* libvtkFiltersGeometry-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeometry-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeometry-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E701CC6926800EB71BA /* libvtkFiltersGeometry-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeometry-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersGeometry-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E711CC6926900EB71BA /* libvtkFiltersHybrid-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHybrid-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersHybrid-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E721CC6926900EB71BA /* libvtkFiltersHybrid-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHybrid-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersHybrid-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E731CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHyperTree-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersHyperTree-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E741CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHyperTree-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersHyperTree-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E751CC6926900EB71BA /* libvtkFiltersImaging-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersImaging-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersImaging-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E761CC6926900EB71BA /* libvtkFiltersImaging-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersImaging-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersImaging-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E771CC6926900EB71BA /* libvtkFiltersModeling-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersModeling-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersModeling-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E781CC6926900EB71BA /* libvtkFiltersModeling-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersModeling-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersModeling-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E791CC6926900EB71BA /* libvtkFiltersParallel-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallel-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersParallel-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E7A1CC6926900EB71BA /* libvtkFiltersParallel-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallel-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersParallel-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E7B1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallelImaging-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersParallelImaging-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E7C1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallelImaging-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersParallelImaging-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E7D1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersProgrammable-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersProgrammable-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E7E1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersProgrammable-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersProgrammable-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E7F1CC6926900EB71BA /* libvtkFiltersSelection-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSelection-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSelection-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E801CC6926900EB71BA /* libvtkFiltersSelection-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSelection-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSelection-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E811CC6926900EB71BA /* libvtkFiltersSMP-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSMP-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSMP-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E821CC6926900EB71BA /* libvtkFiltersSMP-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSMP-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSMP-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E831CC6926900EB71BA /* libvtkFiltersSources-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSources-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSources-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E841CC6926900EB71BA /* libvtkFiltersSources-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSources-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersSources-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E851CC6926900EB71BA /* libvtkFiltersStatistics-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersStatistics-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersStatistics-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E861CC6926900EB71BA /* libvtkFiltersStatistics-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersStatistics-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersStatistics-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E871CC6926900EB71BA /* libvtkFiltersTexture-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersTexture-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersTexture-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E881CC6926900EB71BA /* libvtkFiltersTexture-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersTexture-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersTexture-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E891CC6926900EB71BA /* libvtkFiltersVerdict-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersVerdict-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersVerdict-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E8A1CC6926900EB71BA /* libvtkFiltersVerdict-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersVerdict-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkFiltersVerdict-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E8B1CC6926900EB71BA /* libvtkfreetype-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkfreetype-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkfreetype-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E8C1CC6926900EB71BA /* libvtkfreetype-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkfreetype-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkfreetype-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E8D1CC6926900EB71BA /* libvtkftgl-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkftgl-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkftgl-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E8E1CC6926900EB71BA /* libvtkftgl-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkftgl-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkftgl-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E8F1CC6926900EB71BA /* libvtkGeovisCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkGeovisCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkGeovisCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E901CC6926900EB71BA /* libvtkGeovisCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkGeovisCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkGeovisCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E911CC6926900EB71BA /* libvtkgl2ps-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkgl2ps-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkgl2ps-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E921CC6926900EB71BA /* libvtkgl2ps-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkgl2ps-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkgl2ps-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E931CC6926900EB71BA /* libvtkhdf5_hl-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5_hl-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkhdf5_hl-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E941CC6926900EB71BA /* libvtkhdf5_hl-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5_hl-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkhdf5_hl-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E951CC6926A00EB71BA /* libvtkhdf5-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkhdf5-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E961CC6926A00EB71BA /* libvtkhdf5-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkhdf5-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E971CC6926A00EB71BA /* libvtkImagingColor-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingColor-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingColor-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E981CC6926A00EB71BA /* libvtkImagingColor-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingColor-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingColor-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E991CC6926A00EB71BA /* libvtkImagingCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E9A1CC6926A00EB71BA /* libvtkImagingCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E9B1CC6926A00EB71BA /* libvtkImagingFourier-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingFourier-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingFourier-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E9C1CC6926A00EB71BA /* libvtkImagingFourier-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingFourier-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingFourier-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E9D1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingGeneral-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingGeneral-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474E9E1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingGeneral-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingGeneral-6.2.dylib"; sourceTree = "<group>"; };
+		E9474E9F1CC6926A00EB71BA /* libvtkImagingHybrid-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingHybrid-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingHybrid-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EA01CC6926A00EB71BA /* libvtkImagingHybrid-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingHybrid-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingHybrid-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EA11CC6926A00EB71BA /* libvtkImagingMath-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMath-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingMath-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EA21CC6926A00EB71BA /* libvtkImagingMath-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMath-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingMath-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EA31CC6926A00EB71BA /* libvtkImagingMorphological-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMorphological-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingMorphological-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EA41CC6926A00EB71BA /* libvtkImagingMorphological-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMorphological-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingMorphological-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EA51CC6926A00EB71BA /* libvtkImagingSources-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingSources-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingSources-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EA61CC6926A00EB71BA /* libvtkImagingSources-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingSources-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingSources-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EA71CC6926A00EB71BA /* libvtkImagingStatistics-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStatistics-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingStatistics-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EA81CC6926A00EB71BA /* libvtkImagingStatistics-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStatistics-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingStatistics-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EA91CC6926A00EB71BA /* libvtkImagingStencil-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStencil-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingStencil-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EAA1CC6926A00EB71BA /* libvtkImagingStencil-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStencil-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkImagingStencil-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EAB1CC6926A00EB71BA /* libvtkInfovisCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInfovisCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EAC1CC6926A00EB71BA /* libvtkInfovisCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInfovisCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EAD1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisLayout-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInfovisLayout-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EAE1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisLayout-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInfovisLayout-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EAF1CC6926A00EB71BA /* libvtkInteractionImage-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionImage-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionImage-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EB01CC6926A00EB71BA /* libvtkInteractionImage-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionImage-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionImage-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EB11CC6926A00EB71BA /* libvtkInteractionStyle-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionStyle-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionStyle-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EB21CC6926A00EB71BA /* libvtkInteractionStyle-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionStyle-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionStyle-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EB31CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionWidgets-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionWidgets-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EB41CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionWidgets-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkInteractionWidgets-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EB51CC6926B00EB71BA /* libvtkIOAMR-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOAMR-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOAMR-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EB61CC6926B00EB71BA /* libvtkIOAMR-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOAMR-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOAMR-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EB71CC6926B00EB71BA /* libvtkIOCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EB81CC6926B00EB71BA /* libvtkIOCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EB91CC6926B00EB71BA /* libvtkIOEnSight-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOEnSight-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOEnSight-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EBA1CC6926B00EB71BA /* libvtkIOEnSight-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOEnSight-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOEnSight-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EBB1CC6926B00EB71BA /* libvtkIOExodus-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExodus-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOExodus-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EBC1CC6926B00EB71BA /* libvtkIOExodus-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExodus-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOExodus-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EBD1CC6926B00EB71BA /* libvtkIOExport-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExport-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOExport-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EBE1CC6926B00EB71BA /* libvtkIOExport-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExport-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOExport-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EBF1CC6926B00EB71BA /* libvtkIOGeometry-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOGeometry-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOGeometry-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EC01CC6926B00EB71BA /* libvtkIOGeometry-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOGeometry-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOGeometry-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EC11CC6926C00EB71BA /* libvtkIOImage-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImage-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOImage-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EC21CC6926C00EB71BA /* libvtkIOImage-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImage-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOImage-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EC31CC6926C00EB71BA /* libvtkIOImport-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImport-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOImport-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EC41CC6926C00EB71BA /* libvtkIOImport-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImport-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOImport-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EC51CC6926C00EB71BA /* libvtkIOInfovis-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOInfovis-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOInfovis-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EC61CC6926C00EB71BA /* libvtkIOInfovis-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOInfovis-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOInfovis-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EC71CC6926C00EB71BA /* libvtkIOLegacy-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLegacy-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOLegacy-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EC81CC6926C00EB71BA /* libvtkIOLegacy-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLegacy-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOLegacy-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EC91CC6926C00EB71BA /* libvtkIOLSDyna-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLSDyna-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOLSDyna-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ECA1CC6926C00EB71BA /* libvtkIOLSDyna-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLSDyna-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOLSDyna-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ECB1CC6926C00EB71BA /* libvtkIOMINC-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMINC-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOMINC-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ECC1CC6926C00EB71BA /* libvtkIOMINC-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMINC-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOMINC-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ECD1CC6926C00EB71BA /* libvtkIOMovie-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMovie-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOMovie-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ECE1CC6926C00EB71BA /* libvtkIOMovie-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMovie-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOMovie-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ECF1CC6926C00EB71BA /* libvtkIONetCDF-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIONetCDF-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIONetCDF-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ED01CC6926C00EB71BA /* libvtkIONetCDF-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIONetCDF-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIONetCDF-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ED11CC6926C00EB71BA /* libvtkIOParallel-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallel-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOParallel-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ED21CC6926C00EB71BA /* libvtkIOParallel-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallel-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOParallel-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ED31CC6926C00EB71BA /* libvtkIOParallelXML-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallelXML-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOParallelXML-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ED41CC6926C00EB71BA /* libvtkIOParallelXML-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallelXML-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOParallelXML-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ED51CC6926C00EB71BA /* libvtkIOPLY-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOPLY-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOPLY-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ED61CC6926C00EB71BA /* libvtkIOPLY-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOPLY-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOPLY-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ED71CC6926C00EB71BA /* libvtkIOSQL-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOSQL-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOSQL-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474ED81CC6926C00EB71BA /* libvtkIOSQL-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOSQL-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOSQL-6.2.dylib"; sourceTree = "<group>"; };
+		E9474ED91CC6926C00EB71BA /* libvtkIOVideo-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOVideo-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOVideo-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EDA1CC6926C00EB71BA /* libvtkIOVideo-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOVideo-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOVideo-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EDB1CC6926C00EB71BA /* libvtkIOXML-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXML-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOXML-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EDC1CC6926C00EB71BA /* libvtkIOXML-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXML-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOXML-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EDD1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXMLParser-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOXMLParser-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EDE1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXMLParser-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkIOXMLParser-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EDF1CC6926C00EB71BA /* libvtkjpeg-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjpeg-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkjpeg-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EE01CC6926C00EB71BA /* libvtkjpeg-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjpeg-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkjpeg-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EE11CC6926C00EB71BA /* libvtkjsoncpp-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjsoncpp-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkjsoncpp-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EE21CC6926C00EB71BA /* libvtkjsoncpp-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjsoncpp-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkjsoncpp-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EE31CC6926D00EB71BA /* libvtklibxml2-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtklibxml2-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtklibxml2-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EE41CC6926D00EB71BA /* libvtklibxml2-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtklibxml2-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtklibxml2-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EE51CC6926D00EB71BA /* libvtkmetaio-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkmetaio-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkmetaio-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EE61CC6926D00EB71BA /* libvtkmetaio-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkmetaio-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkmetaio-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EE71CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF_cxx-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkNetCDF_cxx-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EE81CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF_cxx-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkNetCDF_cxx-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EE91CC6926D00EB71BA /* libvtkNetCDF-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkNetCDF-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EEA1CC6926D00EB71BA /* libvtkNetCDF-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkNetCDF-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EEB1CC6926D00EB71BA /* libvtkoggtheora-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkoggtheora-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkoggtheora-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EEC1CC6926D00EB71BA /* libvtkoggtheora-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkoggtheora-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkoggtheora-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EED1CC6926D00EB71BA /* libvtkParallelCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkParallelCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkParallelCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EEE1CC6926D00EB71BA /* libvtkParallelCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkParallelCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkParallelCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EEF1CC6926D00EB71BA /* libvtkpng-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkpng-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkpng-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EF01CC6926D00EB71BA /* libvtkpng-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkpng-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkpng-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EF11CC6926D00EB71BA /* libvtkproj4-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkproj4-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkproj4-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EF21CC6926D00EB71BA /* libvtkproj4-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkproj4-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkproj4-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EF31CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingAnnotation-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingAnnotation-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EF41CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingAnnotation-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingAnnotation-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EF51CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContext2D-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingContext2D-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EF61CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContext2D-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingContext2D-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EF71CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContextOpenGL-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingContextOpenGL-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EF81CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContextOpenGL-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingContextOpenGL-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EF91CC6926D00EB71BA /* libvtkRenderingCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EFA1CC6926D00EB71BA /* libvtkRenderingCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EFB1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingFreeType-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingFreeType-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EFC1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingFreeType-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingFreeType-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EFD1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingFreeTypeOpenGL-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingFreeTypeOpenGL-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474EFE1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingFreeTypeOpenGL-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingFreeTypeOpenGL-6.2.dylib"; sourceTree = "<group>"; };
+		E9474EFF1CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingGL2PS-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingGL2PS-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F001CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingGL2PS-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingGL2PS-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F011CC6926E00EB71BA /* libvtkRenderingImage-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingImage-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingImage-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F021CC6926E00EB71BA /* libvtkRenderingImage-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingImage-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingImage-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F031CC6926E00EB71BA /* libvtkRenderingLabel-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLabel-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLabel-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F041CC6926E00EB71BA /* libvtkRenderingLabel-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLabel-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLabel-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F051CC6926E00EB71BA /* libvtkRenderingLIC-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLIC-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLIC-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F061CC6926E00EB71BA /* libvtkRenderingLIC-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLIC-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLIC-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F071CC6926E00EB71BA /* libvtkRenderingLOD-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLOD-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLOD-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F081CC6926E00EB71BA /* libvtkRenderingLOD-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLOD-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingLOD-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F091CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingOpenGL-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingOpenGL-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F0A1CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingOpenGL-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingOpenGL-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F0B1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolume-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingVolume-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F0C1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolume-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingVolume-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F0D1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolumeOpenGL-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingVolumeOpenGL-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F0E1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolumeOpenGL-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkRenderingVolumeOpenGL-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F0F1CC6926E00EB71BA /* libvtksqlite-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksqlite-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtksqlite-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F101CC6926E00EB71BA /* libvtksqlite-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksqlite-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtksqlite-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F111CC6926E00EB71BA /* libvtksys-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksys-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtksys-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F121CC6926E00EB71BA /* libvtksys-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksys-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtksys-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F131CC6926E00EB71BA /* libvtktiff-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtktiff-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtktiff-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F141CC6926E00EB71BA /* libvtktiff-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtktiff-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtktiff-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F151CC6926E00EB71BA /* libvtkverdict-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkverdict-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkverdict-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F161CC6926E00EB71BA /* libvtkverdict-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkverdict-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkverdict-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F171CC6926E00EB71BA /* libvtkViewsContext2D-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsContext2D-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsContext2D-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F181CC6926E00EB71BA /* libvtkViewsContext2D-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsContext2D-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsContext2D-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F191CC6926F00EB71BA /* libvtkViewsCore-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsCore-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsCore-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F1A1CC6926F00EB71BA /* libvtkViewsCore-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsCore-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsCore-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F1B1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsInfovis-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsInfovis-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F1C1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsInfovis-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkViewsInfovis-6.2.dylib"; sourceTree = "<group>"; };
+		E9474F1D1CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkzlib-6.2.1.dylib"; path = "../../../../usr/local/vtk/lib/libvtkzlib-6.2.1.dylib"; sourceTree = "<group>"; };
+		E9474F1E1CC6926F00EB71BA /* libvtkzlib-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkzlib-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkzlib-6.2.dylib"; sourceTree = "<group>"; };
+		E9474FF91CC69ABF00EB71BA /* gradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gradient.cpp; sourceTree = "<group>"; };
+		E9474FFA1CC69ABF00EB71BA /* gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +629,303 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9474DF61CC6925700EB71BA /* libITKBiasCorrection-4.7.a in Frameworks */,
+				E9474DF71CC6925700EB71BA /* libITKBioCell-4.7.a in Frameworks */,
+				E9474DF81CC6925700EB71BA /* libITKCommon-4.7.a in Frameworks */,
+				E9474DF91CC6925700EB71BA /* libITKDeprecated-4.7.a in Frameworks */,
+				E9474DFA1CC6925700EB71BA /* libITKDICOMParser-4.7.a in Frameworks */,
+				E9474DFB1CC6925700EB71BA /* libitkdouble-conversion-4.7.a in Frameworks */,
+				E9474DFC1CC6925700EB71BA /* libITKEXPAT-4.7.a in Frameworks */,
+				E9474DFD1CC6925700EB71BA /* libITKFEM-4.7.a in Frameworks */,
+				E9474F1F1CC6926F00EB71BA /* libvtkalglib-6.2.1.dylib in Frameworks */,
+				E9474F201CC6926F00EB71BA /* libvtkalglib-6.2.dylib in Frameworks */,
+				E9474F211CC6926F00EB71BA /* libvtkChartsCore-6.2.1.dylib in Frameworks */,
+				E9474F221CC6926F00EB71BA /* libvtkChartsCore-6.2.dylib in Frameworks */,
+				E9474F231CC6926F00EB71BA /* libvtkCommonColor-6.2.1.dylib in Frameworks */,
+				E9474F241CC6926F00EB71BA /* libvtkCommonColor-6.2.dylib in Frameworks */,
+				E9474F251CC6926F00EB71BA /* libvtkCommonComputationalGeometry-6.2.1.dylib in Frameworks */,
+				E9474F261CC6926F00EB71BA /* libvtkCommonComputationalGeometry-6.2.dylib in Frameworks */,
+				E9474F271CC6926F00EB71BA /* libvtkCommonCore-6.2.1.dylib in Frameworks */,
+				E9474F281CC6926F00EB71BA /* libvtkCommonCore-6.2.dylib in Frameworks */,
+				E9474F291CC6926F00EB71BA /* libvtkCommonDataModel-6.2.1.dylib in Frameworks */,
+				E9474F2A1CC6926F00EB71BA /* libvtkCommonDataModel-6.2.dylib in Frameworks */,
+				E9474F2B1CC6926F00EB71BA /* libvtkCommonExecutionModel-6.2.1.dylib in Frameworks */,
+				E9474F2C1CC6926F00EB71BA /* libvtkCommonExecutionModel-6.2.dylib in Frameworks */,
+				E9474F2D1CC6926F00EB71BA /* libvtkCommonMath-6.2.1.dylib in Frameworks */,
+				E9474F2E1CC6926F00EB71BA /* libvtkCommonMath-6.2.dylib in Frameworks */,
+				E9474F2F1CC6926F00EB71BA /* libvtkCommonMisc-6.2.1.dylib in Frameworks */,
+				E9474F301CC6926F00EB71BA /* libvtkCommonMisc-6.2.dylib in Frameworks */,
+				E9474F311CC6926F00EB71BA /* libvtkCommonSystem-6.2.1.dylib in Frameworks */,
+				E9474F321CC6926F00EB71BA /* libvtkCommonSystem-6.2.dylib in Frameworks */,
+				E9474F331CC6926F00EB71BA /* libvtkCommonTransforms-6.2.1.dylib in Frameworks */,
+				E9474F341CC6926F00EB71BA /* libvtkCommonTransforms-6.2.dylib in Frameworks */,
+				E9474F351CC6926F00EB71BA /* libvtkDICOMParser-6.2.1.dylib in Frameworks */,
+				E9474F361CC6926F00EB71BA /* libvtkDICOMParser-6.2.dylib in Frameworks */,
+				E9474F371CC6926F00EB71BA /* libvtkDomainsChemistry-6.2.1.dylib in Frameworks */,
+				E9474F381CC6926F00EB71BA /* libvtkDomainsChemistry-6.2.dylib in Frameworks */,
+				E9474F391CC6926F00EB71BA /* libvtkexoIIc-6.2.1.dylib in Frameworks */,
+				E9474F3A1CC6926F00EB71BA /* libvtkexoIIc-6.2.dylib in Frameworks */,
+				E9474F3B1CC6926F00EB71BA /* libvtkexpat-6.2.1.dylib in Frameworks */,
+				E9474F3C1CC6926F00EB71BA /* libvtkexpat-6.2.dylib in Frameworks */,
+				E9474F3D1CC6926F00EB71BA /* libvtkFiltersAMR-6.2.1.dylib in Frameworks */,
+				E9474F3E1CC6926F00EB71BA /* libvtkFiltersAMR-6.2.dylib in Frameworks */,
+				E9474F3F1CC6926F00EB71BA /* libvtkFiltersCore-6.2.1.dylib in Frameworks */,
+				E9474F401CC6926F00EB71BA /* libvtkFiltersCore-6.2.dylib in Frameworks */,
+				E9474F411CC6926F00EB71BA /* libvtkFiltersExtraction-6.2.1.dylib in Frameworks */,
+				E9474F421CC6926F00EB71BA /* libvtkFiltersExtraction-6.2.dylib in Frameworks */,
+				E9474F431CC6926F00EB71BA /* libvtkFiltersFlowPaths-6.2.1.dylib in Frameworks */,
+				E9474F441CC6926F00EB71BA /* libvtkFiltersFlowPaths-6.2.dylib in Frameworks */,
+				E9474F451CC6926F00EB71BA /* libvtkFiltersGeneral-6.2.1.dylib in Frameworks */,
+				E9474F461CC6926F00EB71BA /* libvtkFiltersGeneral-6.2.dylib in Frameworks */,
+				E9474F471CC6926F00EB71BA /* libvtkFiltersGeneric-6.2.1.dylib in Frameworks */,
+				E9474F481CC6926F00EB71BA /* libvtkFiltersGeneric-6.2.dylib in Frameworks */,
+				E9474F491CC6926F00EB71BA /* libvtkFiltersGeometry-6.2.1.dylib in Frameworks */,
+				E9474F4A1CC6926F00EB71BA /* libvtkFiltersGeometry-6.2.dylib in Frameworks */,
+				E9474F4B1CC6926F00EB71BA /* libvtkFiltersHybrid-6.2.1.dylib in Frameworks */,
+				E9474F4C1CC6926F00EB71BA /* libvtkFiltersHybrid-6.2.dylib in Frameworks */,
+				E9474F4D1CC6926F00EB71BA /* libvtkFiltersHyperTree-6.2.1.dylib in Frameworks */,
+				E9474F4E1CC6926F00EB71BA /* libvtkFiltersHyperTree-6.2.dylib in Frameworks */,
+				E9474F4F1CC6926F00EB71BA /* libvtkFiltersImaging-6.2.1.dylib in Frameworks */,
+				E9474F501CC6926F00EB71BA /* libvtkFiltersImaging-6.2.dylib in Frameworks */,
+				E9474F511CC6926F00EB71BA /* libvtkFiltersModeling-6.2.1.dylib in Frameworks */,
+				E9474F521CC6926F00EB71BA /* libvtkFiltersModeling-6.2.dylib in Frameworks */,
+				E9474F531CC6926F00EB71BA /* libvtkFiltersParallel-6.2.1.dylib in Frameworks */,
+				E9474F541CC6926F00EB71BA /* libvtkFiltersParallel-6.2.dylib in Frameworks */,
+				E9474F551CC6926F00EB71BA /* libvtkFiltersParallelImaging-6.2.1.dylib in Frameworks */,
+				E9474F561CC6926F00EB71BA /* libvtkFiltersParallelImaging-6.2.dylib in Frameworks */,
+				E9474F571CC6926F00EB71BA /* libvtkFiltersProgrammable-6.2.1.dylib in Frameworks */,
+				E9474F581CC6926F00EB71BA /* libvtkFiltersProgrammable-6.2.dylib in Frameworks */,
+				E9474F591CC6926F00EB71BA /* libvtkFiltersSelection-6.2.1.dylib in Frameworks */,
+				E9474F5A1CC6926F00EB71BA /* libvtkFiltersSelection-6.2.dylib in Frameworks */,
+				E9474F5B1CC6926F00EB71BA /* libvtkFiltersSMP-6.2.1.dylib in Frameworks */,
+				E9474F5C1CC6926F00EB71BA /* libvtkFiltersSMP-6.2.dylib in Frameworks */,
+				E9474F5D1CC6926F00EB71BA /* libvtkFiltersSources-6.2.1.dylib in Frameworks */,
+				E9474F5E1CC6926F00EB71BA /* libvtkFiltersSources-6.2.dylib in Frameworks */,
+				E9474F5F1CC6926F00EB71BA /* libvtkFiltersStatistics-6.2.1.dylib in Frameworks */,
+				E9474F601CC6926F00EB71BA /* libvtkFiltersStatistics-6.2.dylib in Frameworks */,
+				E9474F611CC6926F00EB71BA /* libvtkFiltersTexture-6.2.1.dylib in Frameworks */,
+				E9474F621CC6926F00EB71BA /* libvtkFiltersTexture-6.2.dylib in Frameworks */,
+				E9474F631CC6926F00EB71BA /* libvtkFiltersVerdict-6.2.1.dylib in Frameworks */,
+				E9474F641CC6926F00EB71BA /* libvtkFiltersVerdict-6.2.dylib in Frameworks */,
+				E9474F651CC6926F00EB71BA /* libvtkfreetype-6.2.1.dylib in Frameworks */,
+				E9474F661CC6926F00EB71BA /* libvtkfreetype-6.2.dylib in Frameworks */,
+				E9474F671CC6926F00EB71BA /* libvtkftgl-6.2.1.dylib in Frameworks */,
+				E9474F681CC6926F00EB71BA /* libvtkftgl-6.2.dylib in Frameworks */,
+				E9474F691CC6926F00EB71BA /* libvtkGeovisCore-6.2.1.dylib in Frameworks */,
+				E9474F6A1CC6926F00EB71BA /* libvtkGeovisCore-6.2.dylib in Frameworks */,
+				E9474F6B1CC6926F00EB71BA /* libvtkgl2ps-6.2.1.dylib in Frameworks */,
+				E9474F6C1CC6926F00EB71BA /* libvtkgl2ps-6.2.dylib in Frameworks */,
+				E9474F6D1CC6926F00EB71BA /* libvtkhdf5_hl-6.2.1.dylib in Frameworks */,
+				E9474F6E1CC6926F00EB71BA /* libvtkhdf5_hl-6.2.dylib in Frameworks */,
+				E9474F6F1CC6926F00EB71BA /* libvtkhdf5-6.2.1.dylib in Frameworks */,
+				E9474F701CC6926F00EB71BA /* libvtkhdf5-6.2.dylib in Frameworks */,
+				E9474F711CC6926F00EB71BA /* libvtkImagingColor-6.2.1.dylib in Frameworks */,
+				E9474F721CC6926F00EB71BA /* libvtkImagingColor-6.2.dylib in Frameworks */,
+				E9474F731CC6926F00EB71BA /* libvtkImagingCore-6.2.1.dylib in Frameworks */,
+				E9474F741CC6926F00EB71BA /* libvtkImagingCore-6.2.dylib in Frameworks */,
+				E9474F751CC6926F00EB71BA /* libvtkImagingFourier-6.2.1.dylib in Frameworks */,
+				E9474F761CC6926F00EB71BA /* libvtkImagingFourier-6.2.dylib in Frameworks */,
+				E9474F771CC6926F00EB71BA /* libvtkImagingGeneral-6.2.1.dylib in Frameworks */,
+				E9474F781CC6926F00EB71BA /* libvtkImagingGeneral-6.2.dylib in Frameworks */,
+				E9474F791CC6926F00EB71BA /* libvtkImagingHybrid-6.2.1.dylib in Frameworks */,
+				E9474F7A1CC6926F00EB71BA /* libvtkImagingHybrid-6.2.dylib in Frameworks */,
+				E9474F7B1CC6926F00EB71BA /* libvtkImagingMath-6.2.1.dylib in Frameworks */,
+				E9474F7C1CC6926F00EB71BA /* libvtkImagingMath-6.2.dylib in Frameworks */,
+				E9474F7D1CC6926F00EB71BA /* libvtkImagingMorphological-6.2.1.dylib in Frameworks */,
+				E9474F7E1CC6926F00EB71BA /* libvtkImagingMorphological-6.2.dylib in Frameworks */,
+				E9474F7F1CC6926F00EB71BA /* libvtkImagingSources-6.2.1.dylib in Frameworks */,
+				E9474F801CC6926F00EB71BA /* libvtkImagingSources-6.2.dylib in Frameworks */,
+				E9474F811CC6926F00EB71BA /* libvtkImagingStatistics-6.2.1.dylib in Frameworks */,
+				E9474F821CC6926F00EB71BA /* libvtkImagingStatistics-6.2.dylib in Frameworks */,
+				E9474F831CC6926F00EB71BA /* libvtkImagingStencil-6.2.1.dylib in Frameworks */,
+				E9474F841CC6926F00EB71BA /* libvtkImagingStencil-6.2.dylib in Frameworks */,
+				E9474F851CC6926F00EB71BA /* libvtkInfovisCore-6.2.1.dylib in Frameworks */,
+				E9474F861CC6926F00EB71BA /* libvtkInfovisCore-6.2.dylib in Frameworks */,
+				E9474F871CC6926F00EB71BA /* libvtkInfovisLayout-6.2.1.dylib in Frameworks */,
+				E9474F881CC6926F00EB71BA /* libvtkInfovisLayout-6.2.dylib in Frameworks */,
+				E9474F891CC6926F00EB71BA /* libvtkInteractionImage-6.2.1.dylib in Frameworks */,
+				E9474F8A1CC6926F00EB71BA /* libvtkInteractionImage-6.2.dylib in Frameworks */,
+				E9474F8B1CC6926F00EB71BA /* libvtkInteractionStyle-6.2.1.dylib in Frameworks */,
+				E9474F8C1CC6926F00EB71BA /* libvtkInteractionStyle-6.2.dylib in Frameworks */,
+				E9474F8D1CC6926F00EB71BA /* libvtkInteractionWidgets-6.2.1.dylib in Frameworks */,
+				E9474F8E1CC6926F00EB71BA /* libvtkInteractionWidgets-6.2.dylib in Frameworks */,
+				E9474F8F1CC6926F00EB71BA /* libvtkIOAMR-6.2.1.dylib in Frameworks */,
+				E9474F901CC6926F00EB71BA /* libvtkIOAMR-6.2.dylib in Frameworks */,
+				E9474F911CC6926F00EB71BA /* libvtkIOCore-6.2.1.dylib in Frameworks */,
+				E9474F921CC6926F00EB71BA /* libvtkIOCore-6.2.dylib in Frameworks */,
+				E9474F931CC6926F00EB71BA /* libvtkIOEnSight-6.2.1.dylib in Frameworks */,
+				E9474F941CC6926F00EB71BA /* libvtkIOEnSight-6.2.dylib in Frameworks */,
+				E9474F951CC6926F00EB71BA /* libvtkIOExodus-6.2.1.dylib in Frameworks */,
+				E9474F961CC6926F00EB71BA /* libvtkIOExodus-6.2.dylib in Frameworks */,
+				E9474F971CC6926F00EB71BA /* libvtkIOExport-6.2.1.dylib in Frameworks */,
+				E9474F981CC6926F00EB71BA /* libvtkIOExport-6.2.dylib in Frameworks */,
+				E9474F991CC6926F00EB71BA /* libvtkIOGeometry-6.2.1.dylib in Frameworks */,
+				E9474F9A1CC6926F00EB71BA /* libvtkIOGeometry-6.2.dylib in Frameworks */,
+				E9474F9B1CC6926F00EB71BA /* libvtkIOImage-6.2.1.dylib in Frameworks */,
+				E9474F9C1CC6926F00EB71BA /* libvtkIOImage-6.2.dylib in Frameworks */,
+				E9474F9D1CC6926F00EB71BA /* libvtkIOImport-6.2.1.dylib in Frameworks */,
+				E9474F9E1CC6926F00EB71BA /* libvtkIOImport-6.2.dylib in Frameworks */,
+				E9474F9F1CC6926F00EB71BA /* libvtkIOInfovis-6.2.1.dylib in Frameworks */,
+				E9474FA01CC6926F00EB71BA /* libvtkIOInfovis-6.2.dylib in Frameworks */,
+				E9474FA11CC6926F00EB71BA /* libvtkIOLegacy-6.2.1.dylib in Frameworks */,
+				E9474FA21CC6926F00EB71BA /* libvtkIOLegacy-6.2.dylib in Frameworks */,
+				E9474FA31CC6926F00EB71BA /* libvtkIOLSDyna-6.2.1.dylib in Frameworks */,
+				E9474FA41CC6926F00EB71BA /* libvtkIOLSDyna-6.2.dylib in Frameworks */,
+				E9474FA51CC6926F00EB71BA /* libvtkIOMINC-6.2.1.dylib in Frameworks */,
+				E9474FA61CC6926F00EB71BA /* libvtkIOMINC-6.2.dylib in Frameworks */,
+				E9474FA71CC6926F00EB71BA /* libvtkIOMovie-6.2.1.dylib in Frameworks */,
+				E9474FA81CC6926F00EB71BA /* libvtkIOMovie-6.2.dylib in Frameworks */,
+				E9474FA91CC6926F00EB71BA /* libvtkIONetCDF-6.2.1.dylib in Frameworks */,
+				E9474FAA1CC6926F00EB71BA /* libvtkIONetCDF-6.2.dylib in Frameworks */,
+				E9474FAB1CC6926F00EB71BA /* libvtkIOParallel-6.2.1.dylib in Frameworks */,
+				E9474FAC1CC6926F00EB71BA /* libvtkIOParallel-6.2.dylib in Frameworks */,
+				E9474FAD1CC6926F00EB71BA /* libvtkIOParallelXML-6.2.1.dylib in Frameworks */,
+				E9474FAE1CC6926F00EB71BA /* libvtkIOParallelXML-6.2.dylib in Frameworks */,
+				E9474FAF1CC6926F00EB71BA /* libvtkIOPLY-6.2.1.dylib in Frameworks */,
+				E9474FB01CC6926F00EB71BA /* libvtkIOPLY-6.2.dylib in Frameworks */,
+				E9474FB11CC6926F00EB71BA /* libvtkIOSQL-6.2.1.dylib in Frameworks */,
+				E9474FB21CC6926F00EB71BA /* libvtkIOSQL-6.2.dylib in Frameworks */,
+				E9474FB31CC6926F00EB71BA /* libvtkIOVideo-6.2.1.dylib in Frameworks */,
+				E9474FB41CC6926F00EB71BA /* libvtkIOVideo-6.2.dylib in Frameworks */,
+				E9474FB51CC6926F00EB71BA /* libvtkIOXML-6.2.1.dylib in Frameworks */,
+				E9474FB61CC6926F00EB71BA /* libvtkIOXML-6.2.dylib in Frameworks */,
+				E9474FB71CC6926F00EB71BA /* libvtkIOXMLParser-6.2.1.dylib in Frameworks */,
+				E9474FB81CC6926F00EB71BA /* libvtkIOXMLParser-6.2.dylib in Frameworks */,
+				E9474FB91CC6926F00EB71BA /* libvtkjpeg-6.2.1.dylib in Frameworks */,
+				E9474FBA1CC6926F00EB71BA /* libvtkjpeg-6.2.dylib in Frameworks */,
+				E9474FBB1CC6926F00EB71BA /* libvtkjsoncpp-6.2.1.dylib in Frameworks */,
+				E9474FBC1CC6926F00EB71BA /* libvtkjsoncpp-6.2.dylib in Frameworks */,
+				E9474FBD1CC6926F00EB71BA /* libvtklibxml2-6.2.1.dylib in Frameworks */,
+				E9474FBE1CC6926F00EB71BA /* libvtklibxml2-6.2.dylib in Frameworks */,
+				E9474FBF1CC6926F00EB71BA /* libvtkmetaio-6.2.1.dylib in Frameworks */,
+				E9474FC01CC6926F00EB71BA /* libvtkmetaio-6.2.dylib in Frameworks */,
+				E9474FC11CC6926F00EB71BA /* libvtkNetCDF_cxx-6.2.1.dylib in Frameworks */,
+				E9474FC21CC6926F00EB71BA /* libvtkNetCDF_cxx-6.2.dylib in Frameworks */,
+				E9474FC31CC6926F00EB71BA /* libvtkNetCDF-6.2.1.dylib in Frameworks */,
+				E9474FC41CC6926F00EB71BA /* libvtkNetCDF-6.2.dylib in Frameworks */,
+				E9474FC51CC6926F00EB71BA /* libvtkoggtheora-6.2.1.dylib in Frameworks */,
+				E9474FC61CC6926F00EB71BA /* libvtkoggtheora-6.2.dylib in Frameworks */,
+				E9474FC71CC6926F00EB71BA /* libvtkParallelCore-6.2.1.dylib in Frameworks */,
+				E9474FC81CC6926F00EB71BA /* libvtkParallelCore-6.2.dylib in Frameworks */,
+				E9474FC91CC6926F00EB71BA /* libvtkpng-6.2.1.dylib in Frameworks */,
+				E9474FCA1CC6926F00EB71BA /* libvtkpng-6.2.dylib in Frameworks */,
+				E9474FCB1CC6926F00EB71BA /* libvtkproj4-6.2.1.dylib in Frameworks */,
+				E9474FCC1CC6926F00EB71BA /* libvtkproj4-6.2.dylib in Frameworks */,
+				E9474FCD1CC6926F00EB71BA /* libvtkRenderingAnnotation-6.2.1.dylib in Frameworks */,
+				E9474FCE1CC6926F00EB71BA /* libvtkRenderingAnnotation-6.2.dylib in Frameworks */,
+				E9474FCF1CC6926F00EB71BA /* libvtkRenderingContext2D-6.2.1.dylib in Frameworks */,
+				E9474FD01CC6926F00EB71BA /* libvtkRenderingContext2D-6.2.dylib in Frameworks */,
+				E9474FD11CC6926F00EB71BA /* libvtkRenderingContextOpenGL-6.2.1.dylib in Frameworks */,
+				E9474FD21CC6926F00EB71BA /* libvtkRenderingContextOpenGL-6.2.dylib in Frameworks */,
+				E9474FD31CC6926F00EB71BA /* libvtkRenderingCore-6.2.1.dylib in Frameworks */,
+				E9474FD41CC6926F00EB71BA /* libvtkRenderingCore-6.2.dylib in Frameworks */,
+				E9474FD51CC6926F00EB71BA /* libvtkRenderingFreeType-6.2.1.dylib in Frameworks */,
+				E9474FD61CC6926F00EB71BA /* libvtkRenderingFreeType-6.2.dylib in Frameworks */,
+				E9474FD71CC6926F00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.1.dylib in Frameworks */,
+				E9474FD81CC6926F00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.dylib in Frameworks */,
+				E9474FD91CC6926F00EB71BA /* libvtkRenderingGL2PS-6.2.1.dylib in Frameworks */,
+				E9474FDA1CC6926F00EB71BA /* libvtkRenderingGL2PS-6.2.dylib in Frameworks */,
+				E9474FDB1CC6926F00EB71BA /* libvtkRenderingImage-6.2.1.dylib in Frameworks */,
+				E9474FDC1CC6926F00EB71BA /* libvtkRenderingImage-6.2.dylib in Frameworks */,
+				E9474FDD1CC6926F00EB71BA /* libvtkRenderingLabel-6.2.1.dylib in Frameworks */,
+				E9474FDE1CC6926F00EB71BA /* libvtkRenderingLabel-6.2.dylib in Frameworks */,
+				E9474FDF1CC6926F00EB71BA /* libvtkRenderingLIC-6.2.1.dylib in Frameworks */,
+				E9474FE01CC6926F00EB71BA /* libvtkRenderingLIC-6.2.dylib in Frameworks */,
+				E9474FE11CC6926F00EB71BA /* libvtkRenderingLOD-6.2.1.dylib in Frameworks */,
+				E9474FE21CC6926F00EB71BA /* libvtkRenderingLOD-6.2.dylib in Frameworks */,
+				E9474FE31CC6926F00EB71BA /* libvtkRenderingOpenGL-6.2.1.dylib in Frameworks */,
+				E9474FE41CC6926F00EB71BA /* libvtkRenderingOpenGL-6.2.dylib in Frameworks */,
+				E9474FE51CC6926F00EB71BA /* libvtkRenderingVolume-6.2.1.dylib in Frameworks */,
+				E9474FE61CC6926F00EB71BA /* libvtkRenderingVolume-6.2.dylib in Frameworks */,
+				E9474FE71CC6926F00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.1.dylib in Frameworks */,
+				E9474FE81CC6926F00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.dylib in Frameworks */,
+				E9474FE91CC6926F00EB71BA /* libvtksqlite-6.2.1.dylib in Frameworks */,
+				E9474FEA1CC6926F00EB71BA /* libvtksqlite-6.2.dylib in Frameworks */,
+				E9474FEB1CC6926F00EB71BA /* libvtksys-6.2.1.dylib in Frameworks */,
+				E9474FEC1CC6926F00EB71BA /* libvtksys-6.2.dylib in Frameworks */,
+				E9474FED1CC6926F00EB71BA /* libvtktiff-6.2.1.dylib in Frameworks */,
+				E9474FEE1CC6926F00EB71BA /* libvtktiff-6.2.dylib in Frameworks */,
+				E9474FEF1CC6926F00EB71BA /* libvtkverdict-6.2.1.dylib in Frameworks */,
+				E9474FF01CC6926F00EB71BA /* libvtkverdict-6.2.dylib in Frameworks */,
+				E9474FF11CC6926F00EB71BA /* libvtkViewsContext2D-6.2.1.dylib in Frameworks */,
+				E9474FF21CC6926F00EB71BA /* libvtkViewsContext2D-6.2.dylib in Frameworks */,
+				E9474FF31CC6926F00EB71BA /* libvtkViewsCore-6.2.1.dylib in Frameworks */,
+				E9474FF41CC6926F00EB71BA /* libvtkViewsCore-6.2.dylib in Frameworks */,
+				E9474FF51CC6926F00EB71BA /* libvtkViewsInfovis-6.2.1.dylib in Frameworks */,
+				E9474FF61CC6926F00EB71BA /* libvtkViewsInfovis-6.2.dylib in Frameworks */,
+				E9474FF71CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib in Frameworks */,
+				E9474FF81CC6926F00EB71BA /* libvtkzlib-6.2.dylib in Frameworks */,
+				E9474DFE1CC6925700EB71BA /* libitkgdcmCommon-4.7.a in Frameworks */,
+				E9474DFF1CC6925700EB71BA /* libitkgdcmDICT-4.7.a in Frameworks */,
+				E9474E001CC6925700EB71BA /* libitkgdcmDSED-4.7.a in Frameworks */,
+				E9474E011CC6925700EB71BA /* libitkgdcmIOD-4.7.a in Frameworks */,
+				E9474E021CC6925700EB71BA /* libitkgdcmjpeg8-4.7.a in Frameworks */,
+				E9474E031CC6925700EB71BA /* libitkgdcmjpeg12-4.7.a in Frameworks */,
+				E9474E041CC6925700EB71BA /* libitkgdcmjpeg16-4.7.a in Frameworks */,
+				E9474E051CC6925700EB71BA /* libitkgdcmMSFF-4.7.a in Frameworks */,
+				E9474E061CC6925700EB71BA /* libitkgdcmuuid-4.7.a in Frameworks */,
+				E9474E071CC6925700EB71BA /* libITKgiftiio-4.7.a in Frameworks */,
+				E9474E081CC6925700EB71BA /* libitkhdf5_cpp-4.7.a in Frameworks */,
+				E9474E091CC6925700EB71BA /* libitkhdf5-4.7.a in Frameworks */,
+				E9474E0A1CC6925700EB71BA /* libITKIOBioRad-4.7.a in Frameworks */,
+				E9474E0B1CC6925700EB71BA /* libITKIOBMP-4.7.a in Frameworks */,
+				E9474E0C1CC6925700EB71BA /* libITKIOCSV-4.7.a in Frameworks */,
+				E9474E0D1CC6925700EB71BA /* libITKIOGDCM-4.7.a in Frameworks */,
+				E9474E0E1CC6925700EB71BA /* libITKIOGE-4.7.a in Frameworks */,
+				E9474E0F1CC6925700EB71BA /* libITKIOGIPL-4.7.a in Frameworks */,
+				E9474E101CC6925700EB71BA /* libITKIOHDF5-4.7.a in Frameworks */,
+				E9474E111CC6925700EB71BA /* libITKIOImageBase-4.7.a in Frameworks */,
+				E9474E121CC6925700EB71BA /* libITKIOIPL-4.7.a in Frameworks */,
+				E9474E131CC6925700EB71BA /* libITKIOJPEG-4.7.a in Frameworks */,
+				E9474E141CC6925700EB71BA /* libITKIOLSM-4.7.a in Frameworks */,
+				E9474E151CC6925700EB71BA /* libITKIOMesh-4.7.a in Frameworks */,
+				E9474E161CC6925700EB71BA /* libITKIOMeta-4.7.a in Frameworks */,
+				E9474E171CC6925700EB71BA /* libITKIOMRC-4.7.a in Frameworks */,
+				E9474E181CC6925700EB71BA /* libITKIONIFTI-4.7.a in Frameworks */,
+				E9474E191CC6925700EB71BA /* libITKIONRRD-4.7.a in Frameworks */,
+				E9474E1A1CC6925700EB71BA /* libITKIOPNG-4.7.a in Frameworks */,
+				E9474E1B1CC6925700EB71BA /* libITKIOSiemens-4.7.a in Frameworks */,
+				E9474E1C1CC6925700EB71BA /* libITKIOSpatialObjects-4.7.a in Frameworks */,
+				E9474E1D1CC6925700EB71BA /* libITKIOStimulate-4.7.a in Frameworks */,
+				E9474E1E1CC6925700EB71BA /* libITKIOTIFF-4.7.a in Frameworks */,
+				E9474E1F1CC6925700EB71BA /* libITKIOTransformBase-4.7.a in Frameworks */,
+				E9474E201CC6925700EB71BA /* libITKIOTransformHDF5-4.7.a in Frameworks */,
+				E9474E211CC6925700EB71BA /* libITKIOTransformInsightLegacy-4.7.a in Frameworks */,
+				E9474E221CC6925700EB71BA /* libITKIOTransformMatlab-4.7.a in Frameworks */,
+				E9474E231CC6925700EB71BA /* libITKIOVTK-4.7.a in Frameworks */,
+				E9474E241CC6925700EB71BA /* libITKIOXML-4.7.a in Frameworks */,
+				E9474E251CC6925700EB71BA /* libitkjpeg-4.7.a in Frameworks */,
+				E9474E261CC6925700EB71BA /* libITKKLMRegionGrowing-4.7.a in Frameworks */,
+				E9474E271CC6925700EB71BA /* libITKLabelMap-4.7.a in Frameworks */,
+				E9474E281CC6925700EB71BA /* libITKMesh-4.7.a in Frameworks */,
+				E9474E291CC6925700EB71BA /* libITKMetaIO-4.7.a in Frameworks */,
+				E9474E2A1CC6925700EB71BA /* libitkNetlibSlatec-4.7.a in Frameworks */,
+				E9474E2B1CC6925700EB71BA /* libITKniftiio-4.7.a in Frameworks */,
+				E9474E2C1CC6925700EB71BA /* libITKNrrdIO-4.7.a in Frameworks */,
+				E9474E2D1CC6925700EB71BA /* libitkopenjpeg-4.7.a in Frameworks */,
+				E9474E2E1CC6925700EB71BA /* libITKOptimizers-4.7.a in Frameworks */,
+				E9474E2F1CC6925700EB71BA /* libITKOptimizersv4-4.7.a in Frameworks */,
+				E9474E301CC6925700EB71BA /* libITKPath-4.7.a in Frameworks */,
+				E9474E311CC6925700EB71BA /* libitkpng-4.7.a in Frameworks */,
+				E9474E321CC6925700EB71BA /* libITKPolynomials-4.7.a in Frameworks */,
+				E9474E331CC6925700EB71BA /* libITKQuadEdgeMesh-4.7.a in Frameworks */,
+				E9474E341CC6925700EB71BA /* libITKSpatialObjects-4.7.a in Frameworks */,
+				E9474E351CC6925700EB71BA /* libITKStatistics-4.7.a in Frameworks */,
+				E9474E361CC6925700EB71BA /* libitksys-4.7.a in Frameworks */,
+				E9474E371CC6925700EB71BA /* libitktiff-4.7.a in Frameworks */,
+				E9474E381CC6925700EB71BA /* libitkv3p_lsqr-4.7.a in Frameworks */,
+				E9474E391CC6925700EB71BA /* libitkv3p_netlib-4.7.a in Frameworks */,
+				E9474E3A1CC6925700EB71BA /* libitkvcl-4.7.a in Frameworks */,
+				E9474E3B1CC6925700EB71BA /* libITKVideoCore-4.7.a in Frameworks */,
+				E9474E3C1CC6925700EB71BA /* libITKVideoIO-4.7.a in Frameworks */,
+				E9474E3D1CC6925700EB71BA /* libitkvnl_algo-4.7.a in Frameworks */,
+				E9474E3E1CC6925700EB71BA /* libitkvnl-4.7.a in Frameworks */,
+				E9474E3F1CC6925700EB71BA /* libITKVNLInstantiation-4.7.a in Frameworks */,
+				E9474E401CC6925700EB71BA /* libITKVTK-4.7.a in Frameworks */,
+				E9474E411CC6925700EB71BA /* libITKVtkGlue-4.7.a in Frameworks */,
+				E9474E421CC6925700EB71BA /* libITKWatersheds-4.7.a in Frameworks */,
+				E9474E431CC6925700EB71BA /* libitkzlib-4.7.a in Frameworks */,
+				E9474E441CC6925700EB71BA /* libITKznz-4.7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +935,303 @@
 		E9474D941CC691A100EB71BA = {
 			isa = PBXGroup;
 			children = (
+				E9474E451CC6926700EB71BA /* libvtkalglib-6.2.1.dylib */,
+				E9474E461CC6926700EB71BA /* libvtkalglib-6.2.dylib */,
+				E9474E471CC6926700EB71BA /* libvtkChartsCore-6.2.1.dylib */,
+				E9474E481CC6926700EB71BA /* libvtkChartsCore-6.2.dylib */,
+				E9474E491CC6926700EB71BA /* libvtkCommonColor-6.2.1.dylib */,
+				E9474E4A1CC6926700EB71BA /* libvtkCommonColor-6.2.dylib */,
+				E9474E4B1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.1.dylib */,
+				E9474E4C1CC6926700EB71BA /* libvtkCommonComputationalGeometry-6.2.dylib */,
+				E9474E4D1CC6926700EB71BA /* libvtkCommonCore-6.2.1.dylib */,
+				E9474E4E1CC6926700EB71BA /* libvtkCommonCore-6.2.dylib */,
+				E9474E4F1CC6926700EB71BA /* libvtkCommonDataModel-6.2.1.dylib */,
+				E9474E501CC6926700EB71BA /* libvtkCommonDataModel-6.2.dylib */,
+				E9474E511CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.1.dylib */,
+				E9474E521CC6926700EB71BA /* libvtkCommonExecutionModel-6.2.dylib */,
+				E9474E531CC6926700EB71BA /* libvtkCommonMath-6.2.1.dylib */,
+				E9474E541CC6926700EB71BA /* libvtkCommonMath-6.2.dylib */,
+				E9474E551CC6926800EB71BA /* libvtkCommonMisc-6.2.1.dylib */,
+				E9474E561CC6926800EB71BA /* libvtkCommonMisc-6.2.dylib */,
+				E9474E571CC6926800EB71BA /* libvtkCommonSystem-6.2.1.dylib */,
+				E9474E581CC6926800EB71BA /* libvtkCommonSystem-6.2.dylib */,
+				E9474E591CC6926800EB71BA /* libvtkCommonTransforms-6.2.1.dylib */,
+				E9474E5A1CC6926800EB71BA /* libvtkCommonTransforms-6.2.dylib */,
+				E9474E5B1CC6926800EB71BA /* libvtkDICOMParser-6.2.1.dylib */,
+				E9474E5C1CC6926800EB71BA /* libvtkDICOMParser-6.2.dylib */,
+				E9474E5D1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.1.dylib */,
+				E9474E5E1CC6926800EB71BA /* libvtkDomainsChemistry-6.2.dylib */,
+				E9474E5F1CC6926800EB71BA /* libvtkexoIIc-6.2.1.dylib */,
+				E9474E601CC6926800EB71BA /* libvtkexoIIc-6.2.dylib */,
+				E9474E611CC6926800EB71BA /* libvtkexpat-6.2.1.dylib */,
+				E9474E621CC6926800EB71BA /* libvtkexpat-6.2.dylib */,
+				E9474E631CC6926800EB71BA /* libvtkFiltersAMR-6.2.1.dylib */,
+				E9474E641CC6926800EB71BA /* libvtkFiltersAMR-6.2.dylib */,
+				E9474E651CC6926800EB71BA /* libvtkFiltersCore-6.2.1.dylib */,
+				E9474E661CC6926800EB71BA /* libvtkFiltersCore-6.2.dylib */,
+				E9474E671CC6926800EB71BA /* libvtkFiltersExtraction-6.2.1.dylib */,
+				E9474E681CC6926800EB71BA /* libvtkFiltersExtraction-6.2.dylib */,
+				E9474E691CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.1.dylib */,
+				E9474E6A1CC6926800EB71BA /* libvtkFiltersFlowPaths-6.2.dylib */,
+				E9474E6B1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.1.dylib */,
+				E9474E6C1CC6926800EB71BA /* libvtkFiltersGeneral-6.2.dylib */,
+				E9474E6D1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.1.dylib */,
+				E9474E6E1CC6926800EB71BA /* libvtkFiltersGeneric-6.2.dylib */,
+				E9474E6F1CC6926800EB71BA /* libvtkFiltersGeometry-6.2.1.dylib */,
+				E9474E701CC6926800EB71BA /* libvtkFiltersGeometry-6.2.dylib */,
+				E9474E711CC6926900EB71BA /* libvtkFiltersHybrid-6.2.1.dylib */,
+				E9474E721CC6926900EB71BA /* libvtkFiltersHybrid-6.2.dylib */,
+				E9474E731CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.1.dylib */,
+				E9474E741CC6926900EB71BA /* libvtkFiltersHyperTree-6.2.dylib */,
+				E9474E751CC6926900EB71BA /* libvtkFiltersImaging-6.2.1.dylib */,
+				E9474E761CC6926900EB71BA /* libvtkFiltersImaging-6.2.dylib */,
+				E9474E771CC6926900EB71BA /* libvtkFiltersModeling-6.2.1.dylib */,
+				E9474E781CC6926900EB71BA /* libvtkFiltersModeling-6.2.dylib */,
+				E9474E791CC6926900EB71BA /* libvtkFiltersParallel-6.2.1.dylib */,
+				E9474E7A1CC6926900EB71BA /* libvtkFiltersParallel-6.2.dylib */,
+				E9474E7B1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.1.dylib */,
+				E9474E7C1CC6926900EB71BA /* libvtkFiltersParallelImaging-6.2.dylib */,
+				E9474E7D1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.1.dylib */,
+				E9474E7E1CC6926900EB71BA /* libvtkFiltersProgrammable-6.2.dylib */,
+				E9474E7F1CC6926900EB71BA /* libvtkFiltersSelection-6.2.1.dylib */,
+				E9474E801CC6926900EB71BA /* libvtkFiltersSelection-6.2.dylib */,
+				E9474E811CC6926900EB71BA /* libvtkFiltersSMP-6.2.1.dylib */,
+				E9474E821CC6926900EB71BA /* libvtkFiltersSMP-6.2.dylib */,
+				E9474E831CC6926900EB71BA /* libvtkFiltersSources-6.2.1.dylib */,
+				E9474E841CC6926900EB71BA /* libvtkFiltersSources-6.2.dylib */,
+				E9474E851CC6926900EB71BA /* libvtkFiltersStatistics-6.2.1.dylib */,
+				E9474E861CC6926900EB71BA /* libvtkFiltersStatistics-6.2.dylib */,
+				E9474E871CC6926900EB71BA /* libvtkFiltersTexture-6.2.1.dylib */,
+				E9474E881CC6926900EB71BA /* libvtkFiltersTexture-6.2.dylib */,
+				E9474E891CC6926900EB71BA /* libvtkFiltersVerdict-6.2.1.dylib */,
+				E9474E8A1CC6926900EB71BA /* libvtkFiltersVerdict-6.2.dylib */,
+				E9474E8B1CC6926900EB71BA /* libvtkfreetype-6.2.1.dylib */,
+				E9474E8C1CC6926900EB71BA /* libvtkfreetype-6.2.dylib */,
+				E9474E8D1CC6926900EB71BA /* libvtkftgl-6.2.1.dylib */,
+				E9474E8E1CC6926900EB71BA /* libvtkftgl-6.2.dylib */,
+				E9474E8F1CC6926900EB71BA /* libvtkGeovisCore-6.2.1.dylib */,
+				E9474E901CC6926900EB71BA /* libvtkGeovisCore-6.2.dylib */,
+				E9474E911CC6926900EB71BA /* libvtkgl2ps-6.2.1.dylib */,
+				E9474E921CC6926900EB71BA /* libvtkgl2ps-6.2.dylib */,
+				E9474E931CC6926900EB71BA /* libvtkhdf5_hl-6.2.1.dylib */,
+				E9474E941CC6926900EB71BA /* libvtkhdf5_hl-6.2.dylib */,
+				E9474E951CC6926A00EB71BA /* libvtkhdf5-6.2.1.dylib */,
+				E9474E961CC6926A00EB71BA /* libvtkhdf5-6.2.dylib */,
+				E9474E971CC6926A00EB71BA /* libvtkImagingColor-6.2.1.dylib */,
+				E9474E981CC6926A00EB71BA /* libvtkImagingColor-6.2.dylib */,
+				E9474E991CC6926A00EB71BA /* libvtkImagingCore-6.2.1.dylib */,
+				E9474E9A1CC6926A00EB71BA /* libvtkImagingCore-6.2.dylib */,
+				E9474E9B1CC6926A00EB71BA /* libvtkImagingFourier-6.2.1.dylib */,
+				E9474E9C1CC6926A00EB71BA /* libvtkImagingFourier-6.2.dylib */,
+				E9474E9D1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.1.dylib */,
+				E9474E9E1CC6926A00EB71BA /* libvtkImagingGeneral-6.2.dylib */,
+				E9474E9F1CC6926A00EB71BA /* libvtkImagingHybrid-6.2.1.dylib */,
+				E9474EA01CC6926A00EB71BA /* libvtkImagingHybrid-6.2.dylib */,
+				E9474EA11CC6926A00EB71BA /* libvtkImagingMath-6.2.1.dylib */,
+				E9474EA21CC6926A00EB71BA /* libvtkImagingMath-6.2.dylib */,
+				E9474EA31CC6926A00EB71BA /* libvtkImagingMorphological-6.2.1.dylib */,
+				E9474EA41CC6926A00EB71BA /* libvtkImagingMorphological-6.2.dylib */,
+				E9474EA51CC6926A00EB71BA /* libvtkImagingSources-6.2.1.dylib */,
+				E9474EA61CC6926A00EB71BA /* libvtkImagingSources-6.2.dylib */,
+				E9474EA71CC6926A00EB71BA /* libvtkImagingStatistics-6.2.1.dylib */,
+				E9474EA81CC6926A00EB71BA /* libvtkImagingStatistics-6.2.dylib */,
+				E9474EA91CC6926A00EB71BA /* libvtkImagingStencil-6.2.1.dylib */,
+				E9474EAA1CC6926A00EB71BA /* libvtkImagingStencil-6.2.dylib */,
+				E9474EAB1CC6926A00EB71BA /* libvtkInfovisCore-6.2.1.dylib */,
+				E9474EAC1CC6926A00EB71BA /* libvtkInfovisCore-6.2.dylib */,
+				E9474EAD1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.1.dylib */,
+				E9474EAE1CC6926A00EB71BA /* libvtkInfovisLayout-6.2.dylib */,
+				E9474EAF1CC6926A00EB71BA /* libvtkInteractionImage-6.2.1.dylib */,
+				E9474EB01CC6926A00EB71BA /* libvtkInteractionImage-6.2.dylib */,
+				E9474EB11CC6926A00EB71BA /* libvtkInteractionStyle-6.2.1.dylib */,
+				E9474EB21CC6926A00EB71BA /* libvtkInteractionStyle-6.2.dylib */,
+				E9474EB31CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.1.dylib */,
+				E9474EB41CC6926B00EB71BA /* libvtkInteractionWidgets-6.2.dylib */,
+				E9474EB51CC6926B00EB71BA /* libvtkIOAMR-6.2.1.dylib */,
+				E9474EB61CC6926B00EB71BA /* libvtkIOAMR-6.2.dylib */,
+				E9474EB71CC6926B00EB71BA /* libvtkIOCore-6.2.1.dylib */,
+				E9474EB81CC6926B00EB71BA /* libvtkIOCore-6.2.dylib */,
+				E9474EB91CC6926B00EB71BA /* libvtkIOEnSight-6.2.1.dylib */,
+				E9474EBA1CC6926B00EB71BA /* libvtkIOEnSight-6.2.dylib */,
+				E9474EBB1CC6926B00EB71BA /* libvtkIOExodus-6.2.1.dylib */,
+				E9474EBC1CC6926B00EB71BA /* libvtkIOExodus-6.2.dylib */,
+				E9474EBD1CC6926B00EB71BA /* libvtkIOExport-6.2.1.dylib */,
+				E9474EBE1CC6926B00EB71BA /* libvtkIOExport-6.2.dylib */,
+				E9474EBF1CC6926B00EB71BA /* libvtkIOGeometry-6.2.1.dylib */,
+				E9474EC01CC6926B00EB71BA /* libvtkIOGeometry-6.2.dylib */,
+				E9474EC11CC6926C00EB71BA /* libvtkIOImage-6.2.1.dylib */,
+				E9474EC21CC6926C00EB71BA /* libvtkIOImage-6.2.dylib */,
+				E9474EC31CC6926C00EB71BA /* libvtkIOImport-6.2.1.dylib */,
+				E9474EC41CC6926C00EB71BA /* libvtkIOImport-6.2.dylib */,
+				E9474EC51CC6926C00EB71BA /* libvtkIOInfovis-6.2.1.dylib */,
+				E9474EC61CC6926C00EB71BA /* libvtkIOInfovis-6.2.dylib */,
+				E9474EC71CC6926C00EB71BA /* libvtkIOLegacy-6.2.1.dylib */,
+				E9474EC81CC6926C00EB71BA /* libvtkIOLegacy-6.2.dylib */,
+				E9474EC91CC6926C00EB71BA /* libvtkIOLSDyna-6.2.1.dylib */,
+				E9474ECA1CC6926C00EB71BA /* libvtkIOLSDyna-6.2.dylib */,
+				E9474ECB1CC6926C00EB71BA /* libvtkIOMINC-6.2.1.dylib */,
+				E9474ECC1CC6926C00EB71BA /* libvtkIOMINC-6.2.dylib */,
+				E9474ECD1CC6926C00EB71BA /* libvtkIOMovie-6.2.1.dylib */,
+				E9474ECE1CC6926C00EB71BA /* libvtkIOMovie-6.2.dylib */,
+				E9474ECF1CC6926C00EB71BA /* libvtkIONetCDF-6.2.1.dylib */,
+				E9474ED01CC6926C00EB71BA /* libvtkIONetCDF-6.2.dylib */,
+				E9474ED11CC6926C00EB71BA /* libvtkIOParallel-6.2.1.dylib */,
+				E9474ED21CC6926C00EB71BA /* libvtkIOParallel-6.2.dylib */,
+				E9474ED31CC6926C00EB71BA /* libvtkIOParallelXML-6.2.1.dylib */,
+				E9474ED41CC6926C00EB71BA /* libvtkIOParallelXML-6.2.dylib */,
+				E9474ED51CC6926C00EB71BA /* libvtkIOPLY-6.2.1.dylib */,
+				E9474ED61CC6926C00EB71BA /* libvtkIOPLY-6.2.dylib */,
+				E9474ED71CC6926C00EB71BA /* libvtkIOSQL-6.2.1.dylib */,
+				E9474ED81CC6926C00EB71BA /* libvtkIOSQL-6.2.dylib */,
+				E9474ED91CC6926C00EB71BA /* libvtkIOVideo-6.2.1.dylib */,
+				E9474EDA1CC6926C00EB71BA /* libvtkIOVideo-6.2.dylib */,
+				E9474EDB1CC6926C00EB71BA /* libvtkIOXML-6.2.1.dylib */,
+				E9474EDC1CC6926C00EB71BA /* libvtkIOXML-6.2.dylib */,
+				E9474EDD1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.1.dylib */,
+				E9474EDE1CC6926C00EB71BA /* libvtkIOXMLParser-6.2.dylib */,
+				E9474EDF1CC6926C00EB71BA /* libvtkjpeg-6.2.1.dylib */,
+				E9474EE01CC6926C00EB71BA /* libvtkjpeg-6.2.dylib */,
+				E9474EE11CC6926C00EB71BA /* libvtkjsoncpp-6.2.1.dylib */,
+				E9474EE21CC6926C00EB71BA /* libvtkjsoncpp-6.2.dylib */,
+				E9474EE31CC6926D00EB71BA /* libvtklibxml2-6.2.1.dylib */,
+				E9474EE41CC6926D00EB71BA /* libvtklibxml2-6.2.dylib */,
+				E9474EE51CC6926D00EB71BA /* libvtkmetaio-6.2.1.dylib */,
+				E9474EE61CC6926D00EB71BA /* libvtkmetaio-6.2.dylib */,
+				E9474EE71CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.1.dylib */,
+				E9474EE81CC6926D00EB71BA /* libvtkNetCDF_cxx-6.2.dylib */,
+				E9474EE91CC6926D00EB71BA /* libvtkNetCDF-6.2.1.dylib */,
+				E9474EEA1CC6926D00EB71BA /* libvtkNetCDF-6.2.dylib */,
+				E9474EEB1CC6926D00EB71BA /* libvtkoggtheora-6.2.1.dylib */,
+				E9474EEC1CC6926D00EB71BA /* libvtkoggtheora-6.2.dylib */,
+				E9474EED1CC6926D00EB71BA /* libvtkParallelCore-6.2.1.dylib */,
+				E9474EEE1CC6926D00EB71BA /* libvtkParallelCore-6.2.dylib */,
+				E9474EEF1CC6926D00EB71BA /* libvtkpng-6.2.1.dylib */,
+				E9474EF01CC6926D00EB71BA /* libvtkpng-6.2.dylib */,
+				E9474EF11CC6926D00EB71BA /* libvtkproj4-6.2.1.dylib */,
+				E9474EF21CC6926D00EB71BA /* libvtkproj4-6.2.dylib */,
+				E9474EF31CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.1.dylib */,
+				E9474EF41CC6926D00EB71BA /* libvtkRenderingAnnotation-6.2.dylib */,
+				E9474EF51CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.1.dylib */,
+				E9474EF61CC6926D00EB71BA /* libvtkRenderingContext2D-6.2.dylib */,
+				E9474EF71CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.1.dylib */,
+				E9474EF81CC6926D00EB71BA /* libvtkRenderingContextOpenGL-6.2.dylib */,
+				E9474EF91CC6926D00EB71BA /* libvtkRenderingCore-6.2.1.dylib */,
+				E9474EFA1CC6926D00EB71BA /* libvtkRenderingCore-6.2.dylib */,
+				E9474EFB1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.1.dylib */,
+				E9474EFC1CC6926E00EB71BA /* libvtkRenderingFreeType-6.2.dylib */,
+				E9474EFD1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.1.dylib */,
+				E9474EFE1CC6926E00EB71BA /* libvtkRenderingFreeTypeOpenGL-6.2.dylib */,
+				E9474EFF1CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.1.dylib */,
+				E9474F001CC6926E00EB71BA /* libvtkRenderingGL2PS-6.2.dylib */,
+				E9474F011CC6926E00EB71BA /* libvtkRenderingImage-6.2.1.dylib */,
+				E9474F021CC6926E00EB71BA /* libvtkRenderingImage-6.2.dylib */,
+				E9474F031CC6926E00EB71BA /* libvtkRenderingLabel-6.2.1.dylib */,
+				E9474F041CC6926E00EB71BA /* libvtkRenderingLabel-6.2.dylib */,
+				E9474F051CC6926E00EB71BA /* libvtkRenderingLIC-6.2.1.dylib */,
+				E9474F061CC6926E00EB71BA /* libvtkRenderingLIC-6.2.dylib */,
+				E9474F071CC6926E00EB71BA /* libvtkRenderingLOD-6.2.1.dylib */,
+				E9474F081CC6926E00EB71BA /* libvtkRenderingLOD-6.2.dylib */,
+				E9474F091CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.1.dylib */,
+				E9474F0A1CC6926E00EB71BA /* libvtkRenderingOpenGL-6.2.dylib */,
+				E9474F0B1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.1.dylib */,
+				E9474F0C1CC6926E00EB71BA /* libvtkRenderingVolume-6.2.dylib */,
+				E9474F0D1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.1.dylib */,
+				E9474F0E1CC6926E00EB71BA /* libvtkRenderingVolumeOpenGL-6.2.dylib */,
+				E9474F0F1CC6926E00EB71BA /* libvtksqlite-6.2.1.dylib */,
+				E9474F101CC6926E00EB71BA /* libvtksqlite-6.2.dylib */,
+				E9474F111CC6926E00EB71BA /* libvtksys-6.2.1.dylib */,
+				E9474F121CC6926E00EB71BA /* libvtksys-6.2.dylib */,
+				E9474F131CC6926E00EB71BA /* libvtktiff-6.2.1.dylib */,
+				E9474F141CC6926E00EB71BA /* libvtktiff-6.2.dylib */,
+				E9474F151CC6926E00EB71BA /* libvtkverdict-6.2.1.dylib */,
+				E9474F161CC6926E00EB71BA /* libvtkverdict-6.2.dylib */,
+				E9474F171CC6926E00EB71BA /* libvtkViewsContext2D-6.2.1.dylib */,
+				E9474F181CC6926E00EB71BA /* libvtkViewsContext2D-6.2.dylib */,
+				E9474F191CC6926F00EB71BA /* libvtkViewsCore-6.2.1.dylib */,
+				E9474F1A1CC6926F00EB71BA /* libvtkViewsCore-6.2.dylib */,
+				E9474F1B1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.1.dylib */,
+				E9474F1C1CC6926F00EB71BA /* libvtkViewsInfovis-6.2.dylib */,
+				E9474F1D1CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib */,
+				E9474F1E1CC6926F00EB71BA /* libvtkzlib-6.2.dylib */,
+				E9474DA71CC6925700EB71BA /* libITKBiasCorrection-4.7.a */,
+				E9474DA81CC6925700EB71BA /* libITKBioCell-4.7.a */,
+				E9474DA91CC6925700EB71BA /* libITKCommon-4.7.a */,
+				E9474DAA1CC6925700EB71BA /* libITKDeprecated-4.7.a */,
+				E9474DAB1CC6925700EB71BA /* libITKDICOMParser-4.7.a */,
+				E9474DAC1CC6925700EB71BA /* libitkdouble-conversion-4.7.a */,
+				E9474DAD1CC6925700EB71BA /* libITKEXPAT-4.7.a */,
+				E9474DAE1CC6925700EB71BA /* libITKFEM-4.7.a */,
+				E9474DAF1CC6925700EB71BA /* libitkgdcmCommon-4.7.a */,
+				E9474DB01CC6925700EB71BA /* libitkgdcmDICT-4.7.a */,
+				E9474DB11CC6925700EB71BA /* libitkgdcmDSED-4.7.a */,
+				E9474DB21CC6925700EB71BA /* libitkgdcmIOD-4.7.a */,
+				E9474DB31CC6925700EB71BA /* libitkgdcmjpeg8-4.7.a */,
+				E9474DB41CC6925700EB71BA /* libitkgdcmjpeg12-4.7.a */,
+				E9474DB51CC6925700EB71BA /* libitkgdcmjpeg16-4.7.a */,
+				E9474DB61CC6925700EB71BA /* libitkgdcmMSFF-4.7.a */,
+				E9474DB71CC6925700EB71BA /* libitkgdcmuuid-4.7.a */,
+				E9474DB81CC6925700EB71BA /* libITKgiftiio-4.7.a */,
+				E9474DB91CC6925700EB71BA /* libitkhdf5_cpp-4.7.a */,
+				E9474DBA1CC6925700EB71BA /* libitkhdf5-4.7.a */,
+				E9474DBB1CC6925700EB71BA /* libITKIOBioRad-4.7.a */,
+				E9474DBC1CC6925700EB71BA /* libITKIOBMP-4.7.a */,
+				E9474DBD1CC6925700EB71BA /* libITKIOCSV-4.7.a */,
+				E9474DBE1CC6925700EB71BA /* libITKIOGDCM-4.7.a */,
+				E9474DBF1CC6925700EB71BA /* libITKIOGE-4.7.a */,
+				E9474DC01CC6925700EB71BA /* libITKIOGIPL-4.7.a */,
+				E9474DC11CC6925700EB71BA /* libITKIOHDF5-4.7.a */,
+				E9474DC21CC6925700EB71BA /* libITKIOImageBase-4.7.a */,
+				E9474DC31CC6925700EB71BA /* libITKIOIPL-4.7.a */,
+				E9474DC41CC6925700EB71BA /* libITKIOJPEG-4.7.a */,
+				E9474DC51CC6925700EB71BA /* libITKIOLSM-4.7.a */,
+				E9474DC61CC6925700EB71BA /* libITKIOMesh-4.7.a */,
+				E9474DC71CC6925700EB71BA /* libITKIOMeta-4.7.a */,
+				E9474DC81CC6925700EB71BA /* libITKIOMRC-4.7.a */,
+				E9474DC91CC6925700EB71BA /* libITKIONIFTI-4.7.a */,
+				E9474DCA1CC6925700EB71BA /* libITKIONRRD-4.7.a */,
+				E9474DCB1CC6925700EB71BA /* libITKIOPNG-4.7.a */,
+				E9474DCC1CC6925700EB71BA /* libITKIOSiemens-4.7.a */,
+				E9474DCD1CC6925700EB71BA /* libITKIOSpatialObjects-4.7.a */,
+				E9474DCE1CC6925700EB71BA /* libITKIOStimulate-4.7.a */,
+				E9474DCF1CC6925700EB71BA /* libITKIOTIFF-4.7.a */,
+				E9474DD01CC6925700EB71BA /* libITKIOTransformBase-4.7.a */,
+				E9474DD11CC6925700EB71BA /* libITKIOTransformHDF5-4.7.a */,
+				E9474DD21CC6925700EB71BA /* libITKIOTransformInsightLegacy-4.7.a */,
+				E9474DD31CC6925700EB71BA /* libITKIOTransformMatlab-4.7.a */,
+				E9474DD41CC6925700EB71BA /* libITKIOVTK-4.7.a */,
+				E9474DD51CC6925700EB71BA /* libITKIOXML-4.7.a */,
+				E9474DD61CC6925700EB71BA /* libitkjpeg-4.7.a */,
+				E9474DD71CC6925700EB71BA /* libITKKLMRegionGrowing-4.7.a */,
+				E9474DD81CC6925700EB71BA /* libITKLabelMap-4.7.a */,
+				E9474DD91CC6925700EB71BA /* libITKMesh-4.7.a */,
+				E9474DDA1CC6925700EB71BA /* libITKMetaIO-4.7.a */,
+				E9474DDB1CC6925700EB71BA /* libitkNetlibSlatec-4.7.a */,
+				E9474DDC1CC6925700EB71BA /* libITKniftiio-4.7.a */,
+				E9474DDD1CC6925700EB71BA /* libITKNrrdIO-4.7.a */,
+				E9474DDE1CC6925700EB71BA /* libitkopenjpeg-4.7.a */,
+				E9474DDF1CC6925700EB71BA /* libITKOptimizers-4.7.a */,
+				E9474DE01CC6925700EB71BA /* libITKOptimizersv4-4.7.a */,
+				E9474DE11CC6925700EB71BA /* libITKPath-4.7.a */,
+				E9474DE21CC6925700EB71BA /* libitkpng-4.7.a */,
+				E9474DE31CC6925700EB71BA /* libITKPolynomials-4.7.a */,
+				E9474DE41CC6925700EB71BA /* libITKQuadEdgeMesh-4.7.a */,
+				E9474DE51CC6925700EB71BA /* libITKSpatialObjects-4.7.a */,
+				E9474DE61CC6925700EB71BA /* libITKStatistics-4.7.a */,
+				E9474DE71CC6925700EB71BA /* libitksys-4.7.a */,
+				E9474DE81CC6925700EB71BA /* libitktiff-4.7.a */,
+				E9474DE91CC6925700EB71BA /* libitkv3p_lsqr-4.7.a */,
+				E9474DEA1CC6925700EB71BA /* libitkv3p_netlib-4.7.a */,
+				E9474DEB1CC6925700EB71BA /* libitkvcl-4.7.a */,
+				E9474DEC1CC6925700EB71BA /* libITKVideoCore-4.7.a */,
+				E9474DED1CC6925700EB71BA /* libITKVideoIO-4.7.a */,
+				E9474DEE1CC6925700EB71BA /* libitkvnl_algo-4.7.a */,
+				E9474DEF1CC6925700EB71BA /* libitkvnl-4.7.a */,
+				E9474DF01CC6925700EB71BA /* libITKVNLInstantiation-4.7.a */,
+				E9474DF11CC6925700EB71BA /* libITKVTK-4.7.a */,
+				E9474DF21CC6925700EB71BA /* libITKVtkGlue-4.7.a */,
+				E9474DF31CC6925700EB71BA /* libITKWatersheds-4.7.a */,
+				E9474DF41CC6925700EB71BA /* libitkzlib-4.7.a */,
+				E9474DF51CC6925700EB71BA /* libITKznz-4.7.a */,
 				E9474D9F1CC691A100EB71BA /* Initialisation */,
 				E9474D9E1CC691A100EB71BA /* Products */,
 			);
@@ -57,6 +1248,8 @@
 		E9474D9F1CC691A100EB71BA /* Initialisation */ = {
 			isa = PBXGroup;
 			children = (
+				E9474FF91CC69ABF00EB71BA /* gradient.cpp */,
+				E9474FFA1CC69ABF00EB71BA /* gradient.h */,
 				E9474DA01CC691A100EB71BA /* main.cpp */,
 			);
 			path = Initialisation;
@@ -119,6 +1312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9474DA11CC691A100EB71BA /* main.cpp in Sources */,
+				E9474FFB1CC69ABF00EB71BA /* gradient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +1403,15 @@
 		E9474DA51CC691A100EB71BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/itk/include/ITK-4.7",
+					"/usr/local/vtk/include/vtk-6.2",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/itk/lib,
+					/usr/local/vtk/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +1419,16 @@
 		E9474DA61CC691A100EB71BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/itk/include/ITK-4.7",
+					"/usr/local/vtk/include/vtk-6.2",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/itk/lib,
+					/usr/local/vtk/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9474D9C1CC691A100EB71BA"
+               BuildableName = "Initialisation"
+               BlueprintName = "Initialisation"
+               ReferencedContainer = "container:Initialisation.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E9474D9C1CC691A100EB71BA"
+            BuildableName = "Initialisation"
+            BlueprintName = "Initialisation"
+            ReferencedContainer = "container:Initialisation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +51,29 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E9474D9C1CC691A100EB71BA"
+            BuildableName = "Initialisation"
+            BlueprintName = "Initialisation"
+            ReferencedContainer = "container:Initialisation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-iUS /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/US/US_brutes/3D_1/3D_1_p1.mhd  -iIRM /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/porc1_portal.nii.gz -iMaskVeins /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/hepatic_veins_mask_p1.nii.gz  -o /Users/maximegerard/Documents"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "DYLD_LIBRARY_PATH"
+            value = "/usr/local/itk/lib:/usr/local/vtk/lib"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +83,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E9474D9C1CC691A100EB71BA"
+            BuildableName = "Initialisation"
+            BlueprintName = "Initialisation"
+            ReferencedContainer = "container:Initialisation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
