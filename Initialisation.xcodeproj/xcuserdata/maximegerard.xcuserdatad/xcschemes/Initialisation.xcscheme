@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-iUS /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/US/US_brutes/3D_1/3D_1_p1.mhd  -iIRM /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/porc1_portal.nii.gz -iMaskVeins /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/hepatic_veins_mask_p1.nii.gz  -o /Users/maximegerard/Documents"
+            argument = "-iUS /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/US/US_brutes/3D_1/3D_1_p1.mhd -iCTA /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/CTA/CTA_US_part2.mhd  -iMaskVeins /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/hepatic_veins_mask_p1.nii.gz  -iIRM /Users/maximegerard/Desktop/Exp_Juin_Nov/porc1/IRM_portal/porc1_portal.nii.gz   -o /Users/maximegerard/Documents"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

@@ -306,6 +306,8 @@
 		E9474FF71CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1D1CC6926F00EB71BA /* libvtkzlib-6.2.1.dylib */; };
 		E9474FF81CC6926F00EB71BA /* libvtkzlib-6.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9474F1E1CC6926F00EB71BA /* libvtkzlib-6.2.dylib */; };
 		E9474FFB1CC69ABF00EB71BA /* gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9474FF91CC69ABF00EB71BA /* gradient.cpp */; };
+		E975FA8B1D70CD1400EC111B /* itkLBFGSBOptimizer2.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E975FA891D70CD1400EC111B /* itkLBFGSBOptimizer2.cxx */; };
+		E9BE195E1D720F6D004C6223 /* NCC_function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9BE195C1D720F6D004C6223 /* NCC_function.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -622,6 +624,12 @@
 		E9474F1E1CC6926F00EB71BA /* libvtkzlib-6.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkzlib-6.2.dylib"; path = "../../../../usr/local/vtk/lib/libvtkzlib-6.2.dylib"; sourceTree = "<group>"; };
 		E9474FF91CC69ABF00EB71BA /* gradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gradient.cpp; sourceTree = "<group>"; };
 		E9474FFA1CC69ABF00EB71BA /* gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradient.h; sourceTree = "<group>"; };
+		E975FA891D70CD1400EC111B /* itkLBFGSBOptimizer2.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = itkLBFGSBOptimizer2.cxx; sourceTree = "<group>"; };
+		E975FA8A1D70CD1400EC111B /* itkLBFGSBOptimizer2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itkLBFGSBOptimizer2.h; sourceTree = "<group>"; };
+		E98002771D73984E0081DB6A /* itkNormalizedCorrelationImageToImageMetric2.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = itkNormalizedCorrelationImageToImageMetric2.hxx; sourceTree = "<group>"; };
+		E98002781D73984E0081DB6A /* itkNormalizedCorrelationImageToImageMetric2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itkNormalizedCorrelationImageToImageMetric2.h; sourceTree = "<group>"; };
+		E9BE195C1D720F6D004C6223 /* NCC_function.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NCC_function.cpp; sourceTree = "<group>"; };
+		E9BE195D1D720F6D004C6223 /* NCC_function.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NCC_function.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1248,9 +1256,15 @@
 		E9474D9F1CC691A100EB71BA /* Initialisation */ = {
 			isa = PBXGroup;
 			children = (
+				E98002771D73984E0081DB6A /* itkNormalizedCorrelationImageToImageMetric2.hxx */,
+				E98002781D73984E0081DB6A /* itkNormalizedCorrelationImageToImageMetric2.h */,
+				E975FA891D70CD1400EC111B /* itkLBFGSBOptimizer2.cxx */,
+				E975FA8A1D70CD1400EC111B /* itkLBFGSBOptimizer2.h */,
 				E9474FF91CC69ABF00EB71BA /* gradient.cpp */,
 				E9474FFA1CC69ABF00EB71BA /* gradient.h */,
 				E9474DA01CC691A100EB71BA /* main.cpp */,
+				E9BE195C1D720F6D004C6223 /* NCC_function.cpp */,
+				E9BE195D1D720F6D004C6223 /* NCC_function.hpp */,
 			);
 			path = Initialisation;
 			sourceTree = "<group>";
@@ -1312,6 +1326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9474DA11CC691A100EB71BA /* main.cpp in Sources */,
+				E975FA8B1D70CD1400EC111B /* itkLBFGSBOptimizer2.cxx in Sources */,
+				E9BE195E1D720F6D004C6223 /* NCC_function.cpp in Sources */,
 				E9474FFB1CC69ABF00EB71BA /* gradient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1407,6 +1423,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/itk/include/ITK-4.7",
 					"/usr/local/vtk/include/vtk-6.2",
+					"/Users/maximegerard/Desktop/DLIB/dlib-18.18",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/itk/lib,
@@ -1424,6 +1441,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/itk/include/ITK-4.7",
 					"/usr/local/vtk/include/vtk-6.2",
+					"/Users/maximegerard/Desktop/DLIB/dlib-18.18",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/itk/lib,
@@ -1452,6 +1470,7 @@
 				E9474DA61CC691A100EB71BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
