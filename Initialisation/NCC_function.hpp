@@ -139,6 +139,7 @@ public:
             }
             
             ++ti;
+            ++ti;
         }
         
         //std::cout<<"number of pixels counted : "<<NumberOfPixelsCounted<<std::endl;
@@ -187,9 +188,9 @@ public:
     void setSubstractMeanBool(bool subMean){m_SubtractMean=subMean;}
     
     //getters
-    double getMaxRot(){return m_maxRot;}
-    double getMaxTrans(){return m_maxTrans;}
-    double getRadius(){return m_radius;}
+    double GetMaxRot(){return m_maxRot;}
+    double GetMaxTrans(){return m_maxTrans;}
+    double GetRadius(){return m_radius;}
     
 private:
     ImageType::Pointer m_movingImage;

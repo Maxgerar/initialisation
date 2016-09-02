@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <fstream>
 
 #include "itkImage.h"
 #include "itkImageFileReader.h"
@@ -273,6 +274,10 @@ int main(int argc, const char * argv[]) {
     string filenameVeins;
     string filenameCTA;
     string outputPath;
+    string filenameVesselness;
+    
+    bool vesselness = true;
+    bool initialized = false;
 
     /*********************
      * RUNTIME ARG
@@ -295,6 +300,22 @@ int main(int argc, const char * argv[]) {
             i++;
             filenameIRM = argv[i];
         }
+        
+        if(strcmp(argv[i], "-iVesselness")==0)
+        {
+            i++;
+            filenameVesselness = argv[i];
+            vesselness = false;
+            cout<<"vesselness provided"<<endl;
+        }
+        
+        if(strcmp(argv[i], "-initialized")==0)
+        {
+            i++;
+            initialized = true;
+            cout<<"intialized"<<endl;
+        }
+        
 
         if(strcmp(argv[i], "-iMaskVeins")==0)
         {
@@ -471,31 +492,57 @@ int main(int argc, const char * argv[]) {
     
     //vesselness sur IRM
     cout<<"vesselness image IRM"<<endl;
+    ImageType::Pointer vesselImage = ImageType::New();
     
-    typedef itk::SymmetricSecondRankTensor<double,3> HessianPixelType;
-    typedef itk::Image<HessianPixelType,3> HessianImageType;
-    typedef itk::HessianToObjectnessMeasureImageFilter<HessianImageType, ImageType> ObjectnessFilterType;
+    if(vesselness)
+    {
+        typedef itk::SymmetricSecondRankTensor<double,3> HessianPixelType;
+        typedef itk::Image<HessianPixelType,3> HessianImageType;
+        typedef itk::HessianToObjectnessMeasureImageFilter<HessianImageType, ImageType> ObjectnessFilterType;
+        
+        ObjectnessFilterType::Pointer vesselnessFilter = ObjectnessFilterType::New();
+        vesselnessFilter->SetBrightObject(true);
+        vesselnessFilter->SetScaleObjectnessMeasure(false);
+        vesselnessFilter->SetObjectDimension(1);
+        vesselnessFilter->SetAlpha(0.5);
+        vesselnessFilter->SetBeta(0.5);
+        vesselnessFilter->SetGamma(10.0);
+        //vesselnessFilter->GetInput()->GetN
+        
+        typedef itk::MultiScaleHessianBasedMeasureImageFilter<ImageType, HessianImageType,ImageType> MultiScaleEnhancementFilterType;
+        
+        MultiScaleEnhancementFilterType::Pointer enhancer = MultiScaleEnhancementFilterType::New();
+        enhancer->SetInput(image_IRM);
+        enhancer->SetHessianToMeasureFilter(vesselnessFilter);
+        enhancer->SetSigmaStepMethodToLogarithmic();
+        enhancer->SetSigmaMaximum(2.5); //3.0
+        enhancer->SetSigmaMinimum(2.0); //2.5
+        enhancer->SetNumberOfSigmaSteps(5);
+        
+        vesselImage = enhancer->GetOutput();
+        
+    }
     
-    ObjectnessFilterType::Pointer vesselnessFilter = ObjectnessFilterType::New();
-    vesselnessFilter->SetBrightObject(true);
-    vesselnessFilter->SetScaleObjectnessMeasure(false);
-    vesselnessFilter->SetObjectDimension(1);
-    vesselnessFilter->SetAlpha(0.5);
-    vesselnessFilter->SetBeta(0.5);
-    vesselnessFilter->SetGamma(15.0);
-    //vesselnessFilter->GetInput()->GetN
+    else
+    {
+        cout<<"reading the vesselness image"<<endl;
+        ReaderType::Pointer reader_V = ReaderType::New();
+        reader_V->SetImageIO(n_io);
+        reader_V->SetFileName(filenameVesselness);
+        try {
+            reader_V->Update();
+        } catch (itk::ExceptionObject &e) {
+            cerr<<"Error while reading MRI image"<<endl;
+            cerr<<e<<endl;
+            EXIT_FAILURE;
+        }
+        
+        vesselImage = reader_V->GetOutput();
+
+        
+    }
+
     
-    typedef itk::MultiScaleHessianBasedMeasureImageFilter<ImageType, HessianImageType,ImageType> MultiScaleEnhancementFilterType;
-    
-    MultiScaleEnhancementFilterType::Pointer enhancer = MultiScaleEnhancementFilterType::New();
-    enhancer->SetInput(image_IRM);
-    enhancer->SetHessianToMeasureFilter(vesselnessFilter);
-    enhancer->SetSigmaStepMethodToLogarithmic();
-    enhancer->SetSigmaMaximum(2.5); //3.0
-    enhancer->SetSigmaMinimum(2.0); //2.5
-    enhancer->SetNumberOfSigmaSteps(5);
-    
-    ImageType::Pointer vesselImage = enhancer->GetOutput();
     
     /********************************
      * Rescale intensity VESSELNESS
@@ -529,12 +576,12 @@ int main(int argc, const char * argv[]) {
      * DOWNSAMPLE IRM
      *******************/
     ShrinkFilterType::Pointer shrinkFilter2 = ShrinkFilterType::New();
-    shrinkFilter2->SetInput(mask_veins);
-    //shrinkFilter2->SetInput(vesselImageR);
+    //shrinkFilter2->SetInput(mask_veins);
+    shrinkFilter2->SetInput(vesselImageR);
     
-    shrinkFilter2->SetShrinkFactor(0, 2);
-    shrinkFilter2->SetShrinkFactor(1, 2);
-    shrinkFilter2->SetShrinkFactor(2, 2);
+    shrinkFilter2->SetShrinkFactor(0, 3);
+    shrinkFilter2->SetShrinkFactor(1, 3);
+    shrinkFilter2->SetShrinkFactor(2, 3);
     try {
         shrinkFilter2->Update();
     } catch (itk::ExceptionObject &e) {
@@ -545,6 +592,18 @@ int main(int argc, const char * argv[]) {
     
     //BinaryImageType::Pointer shrunk_mask_veins = shrinkFilter2->GetOutput();
     ImageType::Pointer shrunk_mask_IRM = shrinkFilter2->GetOutput();
+    
+    WriterType::Pointer writerIRM_shrunk = WriterType::New();
+    writerIRM_shrunk->SetImageIO(n_io);
+    writerIRM_shrunk->SetInput(shrunk_mask_IRM);
+    string out_IRM_shrunk = outputPath+"/shrunk_MRI.nii.gz";
+    writerIRM_shrunk->SetFileName(out_IRM_shrunk);
+    try {
+        writerIRM_shrunk->Update();
+    } catch (itk::ExceptionObject &e) {
+        cerr<<"error while writing shrunk MRI image"<<endl;
+        cerr<<e<<endl;
+    }
     
     
     //MEASURE COMPUTATION TIME CONSIDERING ONLY THE US PROCESSING + registration
@@ -562,106 +621,129 @@ int main(int argc, const char * argv[]) {
      ***********************************************************/
     //aligning image origins
     
-    cout<<"aligning image origins"<<endl;
+    ImageType::Pointer US_translated = ImageType::New();
+    ImageType::Pointer CTA_translated = ImageType::New();
     
-    //euler tsf
-    
-    //determining image centers
-    //MRI
     ImageType::SizeType sizeIRM = image_IRM->GetLargestPossibleRegion().GetSize();
     ImageType::PointType origineIRM = image_IRM->GetOrigin();
     ImageType::SpacingType spacingIRM = image_IRM->GetSpacing();
-    ImageType::PointType centerIRM;
-    
-    centerIRM[0] = origineIRM[0]+spacingIRM[0]*sizeIRM[0]/2;
-    centerIRM[1] = origineIRM[1]+spacingIRM[1]*sizeIRM[2]/2;
-    centerIRM[2] = origineIRM[2]+spacingIRM[2]*sizeIRM[1]/2;
-    
-    cout<<"center MRI : "<<centerIRM<<endl;
     
     ImageType::SizeType sizeUS = image_US->GetLargestPossibleRegion().GetSize();
     ImageType::PointType origineUS = image_US->GetOrigin();
     ImageType::SpacingType spacingUS = image_US->GetSpacing();
-    ImageType::PointType centerUS;
     
-    centerUS[0] = origineUS[0]+spacingUS[0]*sizeUS[0]/2;
-    centerUS[1] = origineUS[1]+spacingUS[1]*sizeUS[1]/2;
-    centerUS[2] = origineUS[2]+spacingUS[2]*sizeUS[2]/2;
-    
-    cout<<"center US : "<<centerUS<<endl;
-    
-    //ImageType::PointType tsl = origineIRM-origineUS;
-    
-    EulerTransformType::Pointer initial_tsf = EulerTransformType::New();
-    EulerTransformType::ParametersType Parameters(6);
-    Parameters[0] = 0.0;//+0.2;
-    Parameters[1] = 0.0;
-    Parameters[2] = 0.0;//-0.1
-    //on sait que le foie est situe a droite et dans la partie superieure dans l'abdomen
-    Parameters[3] = -(centerIRM[0]-centerUS[0]);//+30;;//+30;//+20;//10
-    Parameters[4] = -(centerIRM[1]-centerUS[1]);//+10;//+10; //+5,15,0 +20 ?
-    Parameters[5] = -(centerIRM[2]-centerUS[2])-25;//-25 -50-90
-    
-    cout<<"parameters : "<<Parameters<<endl;
-    
-    initial_tsf->SetParameters(Parameters);
-    
-    EulerTransformType::ParametersType fixedParameters(3);
-    fixedParameters[0] = centerUS[0];
-    fixedParameters[1] = centerUS[1];
-    fixedParameters[2] = centerUS[2];
-    
-    initial_tsf->SetFixedParameters(fixedParameters);
-    
-    
-    ResampleFilterType::Pointer resampler = ResampleFilterType::New();
-    resampler->SetInput(image_US);
-    resampler->SetTransform(initial_tsf);
-    resampler->SetSize(image_US->GetLargestPossibleRegion().GetSize());
-    resampler->SetOutputSpacing(image_US->GetSpacing());
-    resampler->SetOutputDirection(initial_tsf->GetInverseMatrix()*image_US->GetDirection());
-    resampler->SetOutputOrigin(initial_tsf->GetInverseTransform()->TransformPoint(image_US->GetOrigin()));
-    
-    ImageType::Pointer US_translated = resampler->GetOutput();
-    
-    
-    WriterType::Pointer writer3 = WriterType::New();
-    string out8 =outputPath+"/translated_US_test.nii.gz";
-    writer3->SetImageIO(n_io);
-    writer3->SetInput(US_translated);
-    writer3->SetFileName(out8);
-    try {
-        writer3->Update();
-    } catch (itk::ExceptionObject &e) {
-        cerr<<"error whilte writing registered image"<<endl;
-        cerr<<e<<endl;
-        return EXIT_FAILURE;
+    if(!initialized)
+    {
+        cout<<"aligning image origins"<<endl;
+        
+        //euler tsf
+        
+        //determining image centers
+        //MRI
+//        ImageType::SizeType sizeIRM = image_IRM->GetLargestPossibleRegion().GetSize();
+//        ImageType::PointType origineIRM = image_IRM->GetOrigin();
+//        ImageType::SpacingType spacingIRM = image_IRM->GetSpacing();
+        ImageType::PointType centerIRM;
+        
+        centerIRM[0] = origineIRM[0]+spacingIRM[0]*sizeIRM[0]/2;
+        centerIRM[1] = origineIRM[1]+spacingIRM[1]*sizeIRM[2]/2;
+        centerIRM[2] = origineIRM[2]+spacingIRM[2]*sizeIRM[1]/2;
+        
+        cout<<"center MRI : "<<centerIRM<<endl;
+        
+//        ImageType::SizeType sizeUS = image_US->GetLargestPossibleRegion().GetSize();
+//        ImageType::PointType origineUS = image_US->GetOrigin();
+//        ImageType::SpacingType spacingUS = image_US->GetSpacing();
+        ImageType::PointType centerUS;
+        
+        centerUS[0] = origineUS[0]+spacingUS[0]*sizeUS[0]/2;
+        centerUS[1] = origineUS[1]+spacingUS[1]*sizeUS[1]/2;
+        centerUS[2] = origineUS[2]+spacingUS[2]*sizeUS[2]/2;
+        
+        cout<<"center US : "<<centerUS<<endl;
+        
+        //ImageType::PointType tsl = origineIRM-origineUS;
+        
+        EulerTransformType::Pointer initial_tsf = EulerTransformType::New();
+        EulerTransformType::ParametersType Parameters(6);
+        Parameters[0] = 0.0;//+0.2;
+        Parameters[1] = 0.0;
+        Parameters[2] = 0.0;//-0.1
+        //on sait que le foie est situe a droite et dans la partie superieure dans l'abdomen
+        Parameters[3] = -(centerIRM[0]-centerUS[0])+50;//+30;//+20;//10
+        Parameters[4] = -(centerIRM[1]-centerUS[1]);//+10;//+10; //+5,15,0 +20 ?
+        Parameters[5] = -(centerIRM[2]-centerUS[2])-45;//-45;//-25 -50-90
+        
+        cout<<"parameters : "<<Parameters<<endl;
+        
+        initial_tsf->SetParameters(Parameters);
+        
+        EulerTransformType::ParametersType fixedParameters(3);
+        fixedParameters[0] = centerUS[0];
+        fixedParameters[1] = centerUS[1];
+        fixedParameters[2] = centerUS[2];
+        
+        initial_tsf->SetFixedParameters(fixedParameters);
+        
+        
+        ResampleFilterType::Pointer resampler = ResampleFilterType::New();
+        resampler->SetInput(image_US);
+        resampler->SetTransform(initial_tsf);
+        resampler->SetSize(image_US->GetLargestPossibleRegion().GetSize());
+        resampler->SetOutputSpacing(image_US->GetSpacing());
+        resampler->SetOutputDirection(initial_tsf->GetInverseMatrix()*image_US->GetDirection());
+        resampler->SetOutputOrigin(initial_tsf->GetInverseTransform()->TransformPoint(image_US->GetOrigin()));
+        
+        US_translated = resampler->GetOutput();
+        
+        
+        WriterType::Pointer writer3 = WriterType::New();
+        string out8 =outputPath+"/translated_US_test.nii.gz";
+        writer3->SetImageIO(n_io);
+        writer3->SetInput(US_translated);
+        writer3->SetFileName(out8);
+        try {
+            writer3->Update();
+        } catch (itk::ExceptionObject &e) {
+            cerr<<"error whilte writing registered image"<<endl;
+            cerr<<e<<endl;
+            return EXIT_FAILURE;
+        }
+        
+        //YOU GOT TO APPLY THE SAME TSF TO THE CTA DATA !!!
+        
+        ResampleFilterType::Pointer resampler2 = ResampleFilterType::New();
+        resampler2->SetInput(CTA);
+        resampler2->SetTransform(initial_tsf);
+        resampler2->SetSize(CTA->GetLargestPossibleRegion().GetSize());
+        resampler2->SetOutputSpacing(CTA->GetSpacing());
+        resampler2->SetOutputDirection(initial_tsf->GetInverseMatrix()*CTA->GetDirection());
+        resampler2->SetOutputOrigin(initial_tsf->GetInverseTransform()->TransformPoint(CTA->GetOrigin()));
+        
+        CTA_translated = resampler2->GetOutput();
+        
+        WriterType::Pointer writerCTA = WriterType::New();
+        string outCTA =outputPath+"/translated_CTA_test.nii.gz";
+        writerCTA->SetImageIO(n_io);
+        writerCTA->SetInput(CTA_translated);
+        writerCTA->SetFileName(outCTA);
+        try {
+            writerCTA->Update();
+        } catch (itk::ExceptionObject &e) {
+            cerr<<"error whilte writing registered image"<<endl;
+            cerr<<e<<endl;
+            return EXIT_FAILURE;
+        }
+
+        
     }
     
-    //YOU GOT TO APPLY THE SAME TSF TO THE CTA DATA !!!
-    
-    ResampleFilterType::Pointer resampler2 = ResampleFilterType::New();
-    resampler2->SetInput(CTA);
-    resampler2->SetTransform(initial_tsf);
-    resampler2->SetSize(CTA->GetLargestPossibleRegion().GetSize());
-    resampler2->SetOutputSpacing(CTA->GetSpacing());
-    resampler2->SetOutputDirection(initial_tsf->GetInverseMatrix()*CTA->GetDirection());
-    resampler2->SetOutputOrigin(initial_tsf->GetInverseTransform()->TransformPoint(CTA->GetOrigin()));
-    
-    ImageType::Pointer CTA_translated = resampler2->GetOutput();
-    
-    WriterType::Pointer writerCTA = WriterType::New();
-    string outCTA =outputPath+"/translated_CTA_test.nii.gz";
-    writerCTA->SetImageIO(n_io);
-    writerCTA->SetInput(CTA_translated);
-    writerCTA->SetFileName(outCTA);
-    try {
-        writerCTA->Update();
-    } catch (itk::ExceptionObject &e) {
-        cerr<<"error whilte writing registered image"<<endl;
-        cerr<<e<<endl;
-        return EXIT_FAILURE;
+    else
+    {
+        US_translated = image_US;
+        CTA_translated = CTA;
     }
+    
     
     /*************************
      * THRESHOLDING
@@ -672,7 +754,7 @@ int main(int argc, const char * argv[]) {
         BinaryThresholdFilterType::Pointer thresholder = BinaryThresholdFilterType::New();
         thresholder->SetInput(US_translated);
         thresholder->SetLowerThreshold(1.0);
-        thresholder->SetUpperThreshold(10.0);
+        thresholder->SetUpperThreshold(25.0);
         thresholder->SetInsideValue(255);
         thresholder->SetOutsideValue(0);
     
@@ -703,8 +785,8 @@ int main(int argc, const char * argv[]) {
     cout<<"downsampling US data"<<endl;
     
     ShrinkFilterType::Pointer shrinkFilter = ShrinkFilterType::New();
-    shrinkFilter->SetInput(mask_US);
-    //shrinkFilter->SetInput(CTA_translated);
+    //shrinkFilter->SetInput(mask_US);
+    shrinkFilter->SetInput(CTA_translated);
     int shrinkX = int(2*spacingIRM[0]/spacingUS[0]);
     int shrinkY = int(2*spacingIRM[1]/spacingUS[1]);
     int shrinkZ = int(2*spacingIRM[2]/spacingUS[2]);
@@ -725,6 +807,19 @@ int main(int argc, const char * argv[]) {
     
     //BinaryImageType::Pointer shrunk_mask_US = shrinkFilter->GetOutput();
     ImageType::Pointer shrunk_CTA_US = shrinkFilter->GetOutput();
+    
+    WriterType::Pointer writer_shrunk_US = WriterType::New();
+    writer_shrunk_US->SetImageIO(n_io);
+    string out_shrunk_US = outputPath+"/shrunk_US.nii.gz";
+    writer_shrunk_US->SetFileName(out_shrunk_US);
+    writer_shrunk_US->SetInput(shrunk_CTA_US);
+    try {
+        writer_shrunk_US->Update();
+    } catch (itk::ExceptionObject &e) {
+        cerr<<"error whilte writing shrunk US image"<<endl;
+        cerr<<e<<endl;
+        return EXIT_FAILURE;
+    }
     
 
 
@@ -939,7 +1034,7 @@ int main(int argc, const char * argv[]) {
     double m = 13;
     
     //rho begin
-    double radius = 0.2; //0.9 //zero makes no sense !!!
+    double radius = 0.9; //0.9 //zero makes no sense !!!
     
     //rho end
     double precision = 0.01; //0.01 0.001
@@ -966,13 +1061,13 @@ int main(int argc, const char * argv[]) {
     
     NCC_function NCC = NCC_function(shrunk_CTA_US, shrunk_mask_IRM);
     NCC.setMaxRot(0.3);
-    NCC.setMaxTrans(30);
+    NCC.setMaxTrans(10);
     NCC.setRadius(radius);
     //NCC.setSubstractMeanBool(true);
     
     //double radius = 0.9
-    double maxRot = 0.3;
-    double maxTrans = 30;
+//    double maxRot = 0.2;
+//    double maxTrans = 10;
     
     //cout<<"initialParameters"<<initialParameters<<endl;
     
@@ -985,12 +1080,12 @@ int main(int argc, const char * argv[]) {
    EulerTransformType::Pointer finalTsf = EulerTransformType::New();
 //    
     EulerTransformType::ParametersType finalParameters(6);
-    finalParameters[0] = initialParameters(0)*maxRot/(radius);
-    finalParameters[1] = initialParameters(1)*maxRot/(radius);
-    finalParameters[2] = initialParameters(2)*maxRot/(radius);
-    finalParameters[3] = initialParameters(3)*maxTrans/(radius);
-    finalParameters[4] = initialParameters(4)*maxTrans/(radius);
-    finalParameters[5] = initialParameters(5)*maxTrans/(radius);
+    finalParameters[0] = initialParameters(0)*NCC.GetMaxRot()/(NCC.GetRadius)();
+    finalParameters[1] = initialParameters(1)*NCC.GetMaxRot()/(NCC.GetRadius)();
+    finalParameters[2] = initialParameters(2)*NCC.GetMaxRot()/(NCC.GetRadius)();
+    finalParameters[3] = initialParameters(3)*NCC.GetMaxTrans()/(NCC.GetRadius)();
+    finalParameters[4] = initialParameters(4)*NCC.GetMaxTrans()/(NCC.GetRadius)();
+    finalParameters[5] = initialParameters(5)*NCC.GetMaxTrans()/(NCC.GetRadius)();
   finalTsf->SetParameters(finalParameters);
 //    
    cout<<"final parameters : "<<finalTsf->GetParameters()<<endl;
@@ -1012,30 +1107,55 @@ int main(int argc, const char * argv[]) {
     finalTsf->SetFixedParameters(eulerFixedParameters2);
     
     cout<<"Write results"<<endl;
+    
+    cout<<"Enregistrement dans fichier parametres : "<<endl;
+    
+    string outP = outputPath+"/parameters_initialisation.txt";
+    ofstream fichier(outP.c_str(),ios::out | ios::trunc);
+    
+    if(fichier)
+    {
+        fichier<<"Scaling factors rotation and translation : "<<endl;
+        fichier<<"Rotation : "<<NCC.GetMaxRot()<<endl;
+        fichier<<"Translation : "<<NCC.GetMaxTrans()<<endl;
+        fichier<<"Radius : "<< NCC.GetRadius()<<endl;
+        fichier<<"Precision "<<precision<<endl;
+        fichier<<"Parameters for rigid transform : "<<endl;
+        fichier<<finalTsf->GetParameters()<<endl;
+        fichier<<" Score for this position : "<<endl;
+        fichier<<best_score<<endl;
+        fichier.close();
+    }
+    
+    else
+    {
+        cerr<<"Error in opening txt file for parameters"<<endl;
+    }
+    
 //
-//    ResampleFilterType::Pointer resampler1 = ResampleFilterType::New();
-//    resampler1->SetInput(US_translated);
-//    resampler1->SetTransform(finalTsf);
-//    resampler1->SetSize(US_translated->GetLargestPossibleRegion().GetSize());
-//    resampler1->SetOutputSpacing(US_translated->GetSpacing());
-//    resampler1->SetOutputDirection(finalTsf->GetInverseMatrix()*US_translated->GetDirection());
-//    resampler1->SetOutputOrigin(finalTsf->GetInverseTransform()->TransformPoint(US_translated->GetOrigin()));
-//    
-//    ImageType::Pointer finalVesselUS = resampler1->GetOutput();
-//    
-//    
-//    WriterType::Pointer writer6 =  WriterType::New();
-//    writer6->SetImageIO(n_io);
-//    string out6 = outputPath+"/registeredVessel_US.nii.gz";
-//    writer6->SetFileName(out6);
-//    writer6->SetInput(finalVesselUS);
-//    try {
-//        writer6->Update();
-//    } catch (itk::ExceptionObject &e) {
-//        cerr<<"error whilte writing registered image"<<endl;
-//        cerr<<e<<endl;
-//        return EXIT_FAILURE;
-//    }
+    ResampleFilterType::Pointer resampler1 = ResampleFilterType::New();
+    resampler1->SetInput(CTA_translated);
+    resampler1->SetTransform(finalTsf);
+    resampler1->SetSize(CTA_translated->GetLargestPossibleRegion().GetSize());
+    resampler1->SetOutputSpacing(CTA_translated->GetSpacing());
+    resampler1->SetOutputDirection(finalTsf->GetInverseMatrix()*CTA_translated->GetDirection());
+    resampler1->SetOutputOrigin(finalTsf->GetInverseTransform()->TransformPoint(CTA_translated->GetOrigin()));
+    
+    ImageType::Pointer finalVesselUS = resampler1->GetOutput();
+    
+    
+    WriterType::Pointer writer6 =  WriterType::New();
+    writer6->SetImageIO(n_io);
+    string out6 = outputPath+"/registered_CTA.nii.gz";
+    writer6->SetFileName(out6);
+    writer6->SetInput(finalVesselUS);
+    try {
+        writer6->Update();
+    } catch (itk::ExceptionObject &e) {
+        cerr<<"error whilte writing registered image"<<endl;
+        cerr<<e<<endl;
+        return EXIT_FAILURE;
+    }
     
     ResampleFilterType::Pointer resampler3 = ResampleFilterType::New();
     resampler3->SetInput(US_translated);
